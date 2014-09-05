@@ -8,7 +8,49 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/work/xilinx/ml605/ipcore_dir_ISE13.3/tmp/_cg/v6_bram4096x64.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/work/xilinx/ml605/ipcore_dir_ISE13.3/v6_pcie_v1_7_x4/source/gtx_rx_valid_filter_v6.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/work/xilinx/ml605/ipcore_dir_ISE13.3/v6_pcie_v1_7_x4/source/gtx_tx_sync_rate_v6.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/work/xilinx/ml605/ipcore_dir_ISE13.3/v6_pcie_v1_7_x4/source/gtx_wrapper_v6.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/work/xilinx/ml605/ipcore_dir_ISE13.3/v6_pcie_v1_7_x4/source/pcie_2_0_v6.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/work/xilinx/ml605/ipcore_dir_ISE13.3/v6_pcie_v1_7_x4/source/pcie_bram_top_v6.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/work/xilinx/ml605/ipcore_dir_ISE13.3/v6_pcie_v1_7_x4/source/pcie_bram_v6.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/work/xilinx/ml605/ipcore_dir_ISE13.3/v6_pcie_v1_7_x4/source/pcie_brams_v6.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/work/xilinx/ml605/ipcore_dir_ISE13.3/v6_pcie_v1_7_x4/source/pcie_clocking_v6.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/work/xilinx/ml605/ipcore_dir_ISE13.3/v6_pcie_v1_7_x4/source/pcie_gtx_v6.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/work/xilinx/ml605/ipcore_dir_ISE13.3/v6_pcie_v1_7_x4/source/pcie_pipe_lane_v6.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/work/xilinx/ml605/ipcore_dir_ISE13.3/v6_pcie_v1_7_x4/source/pcie_pipe_misc_v6.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/work/xilinx/ml605/ipcore_dir_ISE13.3/v6_pcie_v1_7_x4/source/pcie_pipe_v6.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/work/xilinx/ml605/ipcore_dir_ISE13.3/v6_pcie_v1_7_x4/source/pcie_reset_delay_v6.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/work/xilinx/ml605/ipcore_dir_ISE13.3/v6_pcie_v1_7_x4/source/pcie_upconfig_fix_3451_v6.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/work/xilinx/ml605/ipcore_dir_ISE13.3/v6_pcie_v1_7_x4/source/v6_pcie_v1_7_x4.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

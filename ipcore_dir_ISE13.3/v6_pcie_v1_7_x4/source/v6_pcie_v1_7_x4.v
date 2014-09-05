@@ -64,7 +64,7 @@ module v6_pcie_v1_7_x4 # (
   parameter        ALLOW_X8_GEN2 = "FALSE",
   parameter        BAR0 = 32'hFFFF0000,
   parameter        BAR1 = 32'hFFF00000,
-  parameter        BAR2 = 32'hFFFFF000,
+  parameter        BAR2 = 32'hFFF00000,
   parameter        BAR3 = 32'h00000000,
   parameter        BAR4 = 32'h00000000,
   parameter        BAR5 = 32'h00000000,

@@ -5,10 +5,10 @@
 <!--     behavior or data corruption.  It is strongly advised that -->
 <!--     users do not edit the contents of this file.              -->
 <!--                                                               -->
-<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+<!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/vladimir/NEWDMA/ipcore_dir_ISE13.3/tmp/_cg/v6_bram4096x64.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/work/xilinx/ml605/ipcore_dir_ISE13.3/v6_pcie_v1_7_x4/source/v6_pcie_v1_7_x4.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

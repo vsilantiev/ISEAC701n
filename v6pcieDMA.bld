@@ -74,6 +74,18 @@ WARNING:NgdBuild:486 - Attribute "SIM_DEVICE" is not allowed on symbol
    inst_extd/gonep.inst_prim/gf36e1_inst.sngfifo36e1" of type "FIFO36E1".  This
    attribute will be ignored.
 WARNING:NgdBuild:452 - logical net 'cfg_dcommand<15>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wr_addrA<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wr_addrA<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wr_addrA<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wr_addrA<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wr_addrA<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wr_addrA<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wr_addrA<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wr_addrA<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wr_addrA<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wr_addrA<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wr_addrA<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'user_wr_addrA<0>' has no driver
 WARNING:NgdBuild:452 - logical net 'reg05_td<31>' has no driver
 WARNING:NgdBuild:452 - logical net 'reg05_td<30>' has no driver
 WARNING:NgdBuild:452 - logical net 'reg05_td<29>' has no driver
@@ -106,38 +118,6 @@ WARNING:NgdBuild:452 - logical net 'reg05_td<3>' has no driver
 WARNING:NgdBuild:452 - logical net 'reg05_td<2>' has no driver
 WARNING:NgdBuild:452 - logical net 'reg05_td<1>' has no driver
 WARNING:NgdBuild:452 - logical net 'reg05_td<0>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<31>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<30>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<29>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<28>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<27>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<26>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<25>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<24>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<23>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<22>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<21>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<20>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<19>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<18>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<17>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<16>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<15>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<14>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<13>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<12>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<11>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<10>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<9>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<8>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<7>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<6>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<5>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<4>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<3>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<2>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<1>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_td<0>' has no driver
 WARNING:NgdBuild:452 - logical net 'reg07_td<31>' has no driver
 WARNING:NgdBuild:452 - logical net 'reg07_td<30>' has no driver
 WARNING:NgdBuild:452 - logical net 'reg07_td<29>' has no driver
@@ -460,7 +440,6 @@ WARNING:NgdBuild:452 - logical net 'DDR_wr_din<3>' has no driver
 WARNING:NgdBuild:452 - logical net 'DDR_wr_din<2>' has no driver
 WARNING:NgdBuild:452 - logical net 'DDR_wr_din<1>' has no driver
 WARNING:NgdBuild:452 - logical net 'DDR_wr_din<0>' has no driver
-WARNING:NgdBuild:452 - logical net 'reg06_tv' has no driver
 WARNING:NgdBuild:452 - logical net 'reg07_tv' has no driver
 WARNING:NgdBuild:452 - logical net 'reg08_tv' has no driver
 WARNING:NgdBuild:452 - logical net 'reg09_tv' has no driver
@@ -2092,12 +2071,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings: 1305
+  Number of warnings: 1284
 
-Total memory usage is 340528 kilobytes
+Total memory usage is 339632 kilobytes
 
 Writing NGD file "v6pcieDMA.ngd" ...
 Total REAL time to NGDBUILD completion:  45 sec
-Total CPU time to NGDBUILD completion:   44 sec
+Total CPU time to NGDBUILD completion:   43 sec
 
 Writing NGDBUILD log file "v6pcieDMA.bld"...

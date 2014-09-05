@@ -69,7 +69,7 @@ entity v6_pcie_v1_7_x4 is
    ALLOW_X8_GEN2                                : boolean := FALSE;
    BAR0                                         : bit_vector := X"FFFF0000";
    BAR1                                         : bit_vector := X"FFF00000";
-   BAR2                                         : bit_vector := X"FFFFF000";
+   BAR2                                         : bit_vector := X"FFF00000";
    BAR3                                         : bit_vector := X"00000000";
    BAR4                                         : bit_vector := X"00000000";
    BAR5                                         : bit_vector := X"00000000";

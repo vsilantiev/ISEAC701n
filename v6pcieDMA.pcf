@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.58f on Thu Sep 04 08:21:11 2014
+// Written by: Map P.58f on Fri Sep 05 20:18:43 2014
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -48,361 +48,336 @@ COMP "make4Lanes.pcieCore/pcie_clocking_i/mmcm_adv_i" LOCATE = SITE
         "MMCM_ADV_X0Y7" LEVEL 1;
 COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_block_i" LOCATE = SITE "PCIE_X0Y1"
         LEVEL 1;
-COMPGRP AG_core.SLICE = COMP
-        "make4Lanes.pcieCore/pcie_reset_delay_i/reg_count_7_0<3>" COMP
-        "make4Lanes.pcieCore/pcie_reset_delay_i/reg_count_7_0<7>" COMP
-        "make4Lanes.pcieCore/pcie_reset_delay_i/reg_count_23_16<3>" COMP
-        "make4Lanes.pcieCore/sys_reset_n_d" COMP
-        "make4Lanes.pcieCore/pcie_reset_delay_i/sys_reset_n_inv" COMP
-        "MMCM_PHASE_CALIBRATION_ML_FDCPE_I0_399_ML_NEW_D" COMP
-        "make4Lanes.pcieCore/pcie_reset_delay_i/N2" COMP
-        "MMCM_PHASE_CALIBRATION_ML_LDCPE_I0_397_ML_NEW_I0" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2<4>"
-        COMP "make4Lanes.pcieCore/pcie_reset_delay_i/reg_count_23_16<4>_inv"
-        COMP "MMCM_PHASE_CALIBRATION_ML_FDCPE_I0_398_ML_NEW_D" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter<5>"
-        COMP "make4Lanes.pcieCore/pcie_reset_delay_i/reg_count_15_8<3>" COMP
-        "make4Lanes.pcieCore/pcie_reset_delay_i/reg_count_15_8<7>" COMP
-        "cfg_bus_number<3>" COMP "cfg_device_number<4>" COMP
-        "cfg_function_number<2>" COMP
+COMPGRP AG_core.SLICE = COMP "make4Lanes.pcieCore/sys_reset_n_d" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter<5>"
+        COMP
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter<5>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/nextwaitcounter2<7>112"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter<7>"
         COMP
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter<0>"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/state_FSM_FFd11"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter<0>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/Madd_waitcounter[7]_GND_80_o_add_9_OUT_cy<5>"
-        COMP "cfg_bus_number<7>" COMP "cfg_device_number<3>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/Madd_waitcounter[7]_GND_80_o_add_9_OUT_cy<5>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter<7>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/N4"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter<5>"
-        COMP "make4Lanes.pcieCore/trn_reset_n_int1" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/SYNC_DONE<3>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/state_FSM_FFd15"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/state_FSM_FFd10"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/N4"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/ratedone_r"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2<4>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/state_FSM_FFd10"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter<7>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2<4>"
-        COMP "make4Lanes.pcieCore/v6pcie48" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/SyncDone" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/state_FSM_FFd11"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/nextwaitcounter2<1>3"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2<7>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2<5>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/state_FSM_FFd15"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter<0>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2<7>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/Madd_waitcounter2[7]_GND_80_o_add_7_OUT_cy<4>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_rxvld_fallback<3>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/awake_in_progress_q"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/awake_com_count_q<2>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/nextwaitcounter2<1>3"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2<7>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/nextwaitcounter2<7>3"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/state_FSM_FFd11"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/Madd_waitcounter2[7]_GND_80_o_add_7_OUT_cy<4>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2<7>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/state_FSM_FFd15"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/pl_ltssm_state_q<3>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/awake_com_count_q<3>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_rxvld_count<3>"
-        COMP "make4Lanes.pcieCore/cfg_msg_received_inv" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/nextwaitcounter2<7>112"
-        COMP
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/state_FSM_FFd9"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter<7>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/state_FSM_FFd10"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2<4>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/TXPMASETPHASE<3>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/ratedone_r2"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/state_FSM_FFd20"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_rxvld_count<3>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rxelecidle_qq"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/awake_com_count_q<3>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/awake_com_count_q<2>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_state_rxvld_ei_FSM_FFd2"
-        COMP "trn_lnk_up_n_int1" COMP "make4Lanes.pcieCore/v6pcie51" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/cnt_local_pcs_reset<2>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/awake_com_count_q<3>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/awake_com_count_q<2>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/ratedone_r2"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/state_FSM_FFd11"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/state_FSM_FFd15"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/N4"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/state_FSM_FFd20"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2<5>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/state_FSM_FFd20"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/TXENPMAPHASEALIGN<3>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/awake_com_count_q<3>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/awake_com_count_q<2>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/awake_in_progress_q"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/gt_rxelecidle_qq"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/awake_in_progress_q"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_rxvld_fallback<3>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_DRP_CHANALIGN_FIX_3752/write_ts1_gated"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/local_pcs_reset_done"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/awake_in_progress_q"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_DRP_CHANALIGN_FIX_3752/write_ts1_gated"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_DRP_CHANALIGN_FIX_3752/write_ts1_gated"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX2PHYSTATUS" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/nextwaitcounter2<7>112"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/state_FSM_FFd9"
         COMP
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/TXDLYALIGNDISABLE<3>"
         COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2<4>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/state_FSM_FFd20"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/state_FSM_FFd15"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2<4>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/state_FSM_FFd21"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/TXPMASETPHASE<3>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/TXENPMAPHASEALIGN<3>"
+        COMP "theTlpControl/rx_Itf/trn_rbar_hit_n_dly<6>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/nextwaitcounter2<7>3"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2<4>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/TXDLYALIGNDISABLE<1>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter<7>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter<5>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/Madd_waitcounter[7]_GND_47_o_add_7_OUT_cy<5>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/state_FSM_FFd9"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter<7>"
+        COMP
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/state_FSM_FFd20"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter<5>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/state_FSM_FFd15"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/state_FSM_FFd21"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2<7>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2<5>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/state_FSM_FFd21"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2<7>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/Madd_waitcounter2[7]_GND_47_o_add_9_OUT_cy<4>"
         COMP
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/OUT_DIV_RESET<3>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/state_FSM_FFd8"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/gt_phystatus_q"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/gt_rxdata_q<11>"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX3DATA<7>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_symbol_after_eios"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/awake_see_com_q"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/gt_rxelecidle_q"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_rxvld_count<3>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_rxvld_fallback<3>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd2"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rxelecidle_q"
-        COMP "make4Lanes.pcieCore/pcie_clocking_i/reg_clock_locked<1>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/PIPERX3PHYSTATUS" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/N0" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/PIPERX0PHYSTATUS" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/gt_phystatus_q"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/PHYSTATUS_int<3>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/state_FSM_FFd2"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/gt_phystatus_q"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_DRP_CHANALIGN_FIX_3752/write_fts_gated"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/nextwaitcounter2<7>112"
+        COMP "MMCM_PHASE_CALIBRATION_ML_FDCPE_I0_399_ML_NEW_D" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2<5>"
         COMP
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/state_FSM_FFd9"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX3DATA<9>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/gt_rxdata_q<15>"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_eios_detected"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2<7>"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_state_rxvld_ei_FSM_FFd2"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/daddr<25>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/state_FSM_FFd20"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rxvalid_q"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter<0>"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rxdata_q<11>"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX1PHYSTATUS" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/gt_rxelecidle_q"
-        COMP "make4Lanes.pcieCore/phy_rdy_n" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/v6pcie25<2>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_rxvld_count<3>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rxelecidle_qq"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/cnt_local_pcs_reset<2>"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTX_RxResetDone_q<3>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/state_FSM_FFd10"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/state_FSM_FFd10"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/SYNC_DONE<3>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/ratedone_r"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/state_FSM_FFd15"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/state_FSM_FFd20"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/awake_in_progress_q"
+        COMP "make4Lanes.pcieCore/pcie_reset_delay_i/sys_reset_n_inv" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/local_pcs_reset" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/state_FSM_FFd11"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/ratedone_r"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/PHYSTATUS<3>"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/SyncDone" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/TXDLYALIGNRESET<3>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/state_FSM_FFd15"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/ratedone_r2"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/state_FSM_FFd9"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/state_FSM_FFd10"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/N8"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/awake_com_count_q<3>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/awake_com_count_q<2>"
+        COMP "MMCM_PHASE_CALIBRATION_ML_LDCPE_I0_397_ML_NEW_I0" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/gt_phystatus_q"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/state_FSM_FFd1"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter<7>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter<0>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/gt_rxelecidle_qq"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/awake_com_count_q<3>"
+        COMP "make4Lanes.pcieCore/pcie_reset_delay_i/reg_count_7_0<2>_inv"
         COMP
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/state_FSM_FFd2"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/gt_rx_status_q<2>"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/daddr<9>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/TXDLYALIGNDISABLE<1>"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX3DATA<5>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/N01"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/state_FSM_FFd1"
+        COMP "MMCM_PHASE_CALIBRATION_ML_FDCPE_I0_400_ML_NEW_I0" COMP
+        "MMCM_PHASE_CALIBRATION_ML_FDCPE_I0_398_ML_NEW_D" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/state_FSM_FFd1"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/gt_rx_is_skp0_q"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2<7>"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd3"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2<4>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter<5>"
         COMP
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/awake_see_com_q"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd3"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/awake_see_com_q"
+        COMP "cfg_device_number<3>" COMP "cfg_device_number<4>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/state_FSM_FFd1"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/PCS_RESET<3>"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd4"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/gt_phystatus_q"
+        COMP "make4Lanes.pcieCore/trn_reset_n_int1" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/awake_in_progress_q"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd1"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX2STATUS<2>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rxdata_q<3>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_rxvld_fallback<3>"
+        COMP "make4Lanes.pcieCore/sys_reset_n_d_INV_14_o" COMP
+        "cfg_bus_number<3>" COMP "cfg_bus_number<7>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/state_FSM_FFd2"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rxdata_q<15>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_rxvld_fallback<3>"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rx_status_q<2>"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/phy_rdy_pre_cnt<3>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_state_rxvld_ei_FSM_FFd2"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd1"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX0DATA<7>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_rxvld_fallback<3>"
+        COMP "make4Lanes.pcieCore/trn_lnk_up_n_int1" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/PIPERX0PHYSTATUS" COMP
+        "make4Lanes.pcieCore/cfg_msg_received_inv" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/Mcount_reg_rxvld_fallback_val"
+        COMP "make4Lanes.pcieCore/phy_rdy_n_INV_92_o" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_rxvld_count<3>"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX3PHYSTATUS" COMP
+        "LEDs_IO_pin_1_OBUF" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/PIPERX2PHYSTATUS" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_rxvld_fallback<3>"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/pl_ltssm_state_q<3>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/awake_com_count_q<2>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/awake_in_progress_q"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_state_rxvld_ei_FSM_FFd2"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_rxvld_count<3>"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX1VALID" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_rxvld_count<3>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_state_rxvld_ei_FSM_FFd2"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/gt_rxelecidle_q"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTReset_n_INV_65_o"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTReset_n_PCS_RESET[0]_OR_274_o"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/awake_com_count_q<3>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/awake_in_progress_q"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/awake_see_com_q"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_rxvld_count<3>"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/plm_in_l0" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/awake_com_count_q<3>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/awake_see_com_q"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX3VALID" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/gt_rxelecidle_q"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rxelecidle_q"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/Mcount_reg_rxvld_fallback_val"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX1STATUS<1>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/PIPERX2CHARISK<1>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/PIPERX2STATUS<1>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTReset_n_PCS_RESET[2]_OR_282_o"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/gt_rxelecidle_qq"
+        COMP
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_state_rxvld_ei_FSM_FFd2"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/Mcount_reg_rxvld_fallback_val"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd3"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/gt_rxdata_q<3>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd4"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd3"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/din<7>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/gt_rxdata_q<3>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/gt_rxdata_q<7>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/gt_rx_status_q<2>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_symbol_after_eios"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd3"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rxcharisk_q<1>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rxdata_q<7>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rx_is_skp0_q"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/gt_rxdata_q<11>"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/daddr<24>"
+        COMP "make4Lanes.pcieCore/pcie_clocking_i/reg_clock_locked<1>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rxvalid_q"
         COMP
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/gt_rxvalid_q"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX2DATA<13>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd4"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/N0" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_DRP_CHANALIGN_FIX_3752/drpstate_FSM_FFd3"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd2"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX0CHARISK<1>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/PCS_RESET<3>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/TXRESETDONE_q<3>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTX_RxResetDone_q<3>"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX0STATUS<1>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_DRP_CHANALIGN_FIX_3752/drpstate_FSM_FFd3"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/din<17>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/PIPERX3DATA<11>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/gt_rx_is_skp0_q"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/gt_rxcharisk_q<1>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/gt_rxvalid_q"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_DRP_CHANALIGN_FIX_3752/write_ts1_gated"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_DRP_CHANALIGN_FIX_3752/drpstate_FSM_FFd3"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rxdata_q<7>"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX2DATA<7>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rx_status_q<2>"
+        COMP "make4Lanes.pcieCore/phy_rdy_n" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/gt_rx_status_q<2>"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/daddr<17>"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/din<43>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/PIPERX0VALID" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/gt_rxelecidle_q"
         COMP
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/gt_rxvalid_q"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/gt_rxdata_q<7>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/gt_rx_status_q<2>"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd1"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/gt_rxdata_q<3>"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd2"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/din<11>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/din<1>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/PIPERX1DATA<1>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/awake_see_com_q"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/gt_rxdata_q<15>"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_symbol_after_eios"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX1STATUS<2>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/gt_rxdata_q<11>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd1"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_eios_detected"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_symbol_after_eios"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd2"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rx_is_skp0_q"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/awake_see_com_0_awake_see_com_1_OR_98_o"
         COMP
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/gt_rx_is_skp0_q"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/gt_rxdata_q<15>"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/daddr<17>"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX0DATA<11>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/din<33>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_rxvld_fallback<3>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/N01"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_eios_detected"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX0STATUS<2>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/gt_rxcharisk_q<1>"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/daddr<1>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd2"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/gt_rx_is_skp0_q"
+        COMP
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/gt_rxdata_q<11>"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/TXDLYALIGNRESET<3>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_DRP_CHANALIGN_FIX_3752/write_ts1_gated"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/daddr<9>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/din<26>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/PIPERX3DATA<3>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/PIPERX3DATA<13>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_symbol_after_eios"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rxdata_q<3>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_eios_detected"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rxdata_q<11>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/gt_rxdata_q<15>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/gt_rxdata_q<11>"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX0DATA<3>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/PIPERX0DATA<13>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/PIPERX0DATA<15>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd1"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/gt_rxcharisk_q<1>"
         COMP
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/N2"
-        COMP "make4Lanes.pcieCore/trn_lnk_up_n_int1" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/PIPERX1DATA<11>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd3"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/daddr<8>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/din<7>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/PIPERX1DATA<3>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/PIPERX1DATA<7>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rxdata_q<15>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd1"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/gt_rxdata_q<7>"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/phy_rdy_pre_cnt<3>"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX0DATA<5>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/gt_rxdata_q<3>"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/N01"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_DRP_CHANALIGN_FIX_3752/drpstate_FSM_FFd3"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/din<10>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/N01"
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/din<55>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd1"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_symbol_after_eios"
+        COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_eios_detected"
         COMP
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/gt_rxdata_q<3>"
         COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/gt_rxcharisk_q<1>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/gt_rxdata_q<7>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/gt_rx_status_q<2>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/N2"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/PIPERX0DATA<9>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/din<46>" COMP
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_symbol_after_eios"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/gt_rx_is_skp0_q"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/din<23>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/gt_rxdata_q<15>"
-        COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_eios_detected"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/din<39>" COMP
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/gt_rxdata_q[7]_GND_79_o_equal_14_o<7>1"
-        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/din<43>" COMP
+        COMP "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/daddr<0>" COMP
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/din<49>" COMP
         "make4Lanes.pcieCore/pcie_2_0_i/PIPERX0ELECIDLE";
 COMPGRP "AG_core.SLICE" LOCATE = SITE "SLICE_X136Y147:SLICE_X155Y120" LEVEL 4;
 PIN make4Lanes.pcieCore/pcie_2_0_i/pcie_block_i_pins<1259> = BEL
@@ -1578,164 +1553,164 @@ PIN
         "LoopBack_FIFO_Off.queue_buffer0/U0_H2B/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM36.ram"
         PINNAME CLKARDCLKL;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36_2.ramb36_i_pins<63>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36.ramb36_pins<63>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36.ramb36"
         PINNAME CLKARDCLKU;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36_2.ramb36_i_pins<62>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36.ramb36_pins<62>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36.ramb36"
         PINNAME CLKARDCLKL;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36_2.ramb36_i_pins<65>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36.ramb36_pins<65>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36.ramb36"
         PINNAME CLKBWRCLKU;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36_2.ramb36_i_pins<64>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36.ramb36_pins<64>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36.ramb36"
         PINNAME CLKBWRCLKL;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36_2.ramb36_i_pins<63>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36.ramb36_pins<63>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36.ramb36"
         PINNAME CLKARDCLKU;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36_2.ramb36_i_pins<62>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36.ramb36_pins<62>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36.ramb36"
         PINNAME CLKARDCLKL;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36_2.ramb36_i_pins<65>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36.ramb36_pins<65>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36.ramb36"
         PINNAME CLKBWRCLKU;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36_2.ramb36_i_pins<64>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36.ramb36_pins<64>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36.ramb36"
         PINNAME CLKBWRCLKL;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36_2.ramb36_i_pins<63>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36.ramb36_pins<63>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36.ramb36"
         PINNAME CLKARDCLKU;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36_2.ramb36_i_pins<62>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36.ramb36_pins<62>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36.ramb36"
         PINNAME CLKARDCLKL;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36_2.ramb36_i_pins<65>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36.ramb36_pins<65>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36.ramb36"
         PINNAME CLKBWRCLKU;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36_2.ramb36_i_pins<64>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36.ramb36_pins<64>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36.ramb36"
         PINNAME CLKBWRCLKL;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36_2.ramb36_i_pins<63>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36.ramb36_pins<63>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36.ramb36"
         PINNAME CLKARDCLKU;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36_2.ramb36_i_pins<62>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36.ramb36_pins<62>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36.ramb36"
         PINNAME CLKARDCLKL;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36_2.ramb36_i_pins<65>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36.ramb36_pins<65>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36.ramb36"
         PINNAME CLKBWRCLKU;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36_2.ramb36_i_pins<64>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36.ramb36_pins<64>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36.ramb36"
         PINNAME CLKBWRCLKL;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36_2.ramb36_i_pins<63>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36.ramb36_pins<63>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36.ramb36"
         PINNAME CLKARDCLKU;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36_2.ramb36_i_pins<62>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36.ramb36_pins<62>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36.ramb36"
         PINNAME CLKARDCLKL;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36_2.ramb36_i_pins<65>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36.ramb36_pins<65>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36.ramb36"
         PINNAME CLKBWRCLKU;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36_2.ramb36_i_pins<64>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36.ramb36_pins<64>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36.ramb36"
         PINNAME CLKBWRCLKL;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36_2.ramb36_i_pins<63>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36.ramb36_pins<63>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36.ramb36"
         PINNAME CLKARDCLKU;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36_2.ramb36_i_pins<62>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36.ramb36_pins<62>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36.ramb36"
         PINNAME CLKARDCLKL;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36_2.ramb36_i_pins<65>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36.ramb36_pins<65>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36.ramb36"
         PINNAME CLKBWRCLKU;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36_2.ramb36_i_pins<64>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36.ramb36_pins<64>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36.ramb36"
         PINNAME CLKBWRCLKL;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36_2.ramb36_i_pins<63>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36.ramb36_pins<63>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36.ramb36"
         PINNAME CLKARDCLKU;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36_2.ramb36_i_pins<62>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36.ramb36_pins<62>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36.ramb36"
         PINNAME CLKARDCLKL;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36_2.ramb36_i_pins<65>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36.ramb36_pins<65>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36.ramb36"
         PINNAME CLKBWRCLKU;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36_2.ramb36_i_pins<64>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36.ramb36_pins<64>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36.ramb36"
         PINNAME CLKBWRCLKL;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36_2.ramb36_i_pins<63>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36.ramb36_pins<63>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36.ramb36"
         PINNAME CLKARDCLKU;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36_2.ramb36_i_pins<62>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36.ramb36_pins<62>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36.ramb36"
         PINNAME CLKARDCLKL;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36_2.ramb36_i_pins<65>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36.ramb36_pins<65>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36.ramb36"
         PINNAME CLKBWRCLKU;
 PIN
-        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36_2.ramb36_i_pins<64>
+        make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36.ramb36_pins<64>
         = BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36_2.ramb36_i"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36.ramb36"
         PINNAME CLKBWRCLKL;
 TIMEGRP clk_54e96cfd = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         "make4Lanes.pcieCore/cfg_device_number_d_1" BEL
@@ -1903,18 +1878,6 @@ TIMEGRP clk_54e96cfd = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         "theTlpControl/Memory_Space/reg04_rd_r_29" BEL
         "theTlpControl/Memory_Space/reg04_rd_r_30" BEL
         "theTlpControl/Memory_Space/reg04_rd_r_31" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_0" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_1" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_2" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_3" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_4" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_5" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_6" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_7" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_8" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_9" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_10" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_11" BEL
         "theTlpControl/Memory_Space/reg07_rd_r_0" BEL
         "theTlpControl/Memory_Space/reg07_rd_r_1" BEL
         "theTlpControl/Memory_Space/reg07_rd_r_2" BEL
@@ -2294,6 +2257,8 @@ TIMEGRP clk_54e96cfd = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         "theTlpControl/Memory_Space/Reg_WrMuxer_Hi_30" BEL
         "theTlpControl/Memory_Space/Reg_WrMuxer_Hi_31" BEL
         "theTlpControl/Memory_Space/Reg_WrMuxer_Hi_32" BEL
+        "theTlpControl/Memory_Space/Reg_WrMuxer_Hi_33" BEL
+        "theTlpControl/Memory_Space/Reg_WrMuxer_Lo_49" BEL
         "theTlpControl/Memory_Space/Reg_WrMuxer_Lo_48" BEL
         "theTlpControl/Memory_Space/Reg_WrMuxer_Lo_47" BEL
         "theTlpControl/Memory_Space/Reg_WrMuxer_Lo_46" BEL
@@ -2326,6 +2291,7 @@ TIMEGRP clk_54e96cfd = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         "theTlpControl/Memory_Space/reg03_tv_i" BEL
         "theTlpControl/Memory_Space/reg04_tv_i" BEL
         "theTlpControl/Memory_Space/reg05_tv_i" BEL
+        "theTlpControl/Memory_Space/reg06_tv_i" BEL
         "theTlpControl/Memory_Space/Regs_WrEn_r2" BEL
         "theTlpControl/Memory_Space/Regs_WrDin_r2_0" BEL
         "theTlpControl/Memory_Space/Regs_WrDin_r2_1" BEL
@@ -2591,6 +2557,38 @@ TIMEGRP clk_54e96cfd = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         "theTlpControl/Memory_Space/reg04_td_i_29" BEL
         "theTlpControl/Memory_Space/reg04_td_i_30" BEL
         "theTlpControl/Memory_Space/reg04_td_i_31" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_0" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_1" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_2" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_3" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_4" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_5" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_6" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_7" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_8" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_9" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_10" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_11" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_12" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_13" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_14" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_15" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_16" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_17" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_18" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_19" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_20" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_21" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_22" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_23" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_24" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_25" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_26" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_27" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_28" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_29" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_30" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_31" BEL
         "theTlpControl/Memory_Space/Sys_Int_Enable_i_31" BEL
         "theTlpControl/Memory_Space/Sys_Int_Enable_i_30" BEL
         "theTlpControl/Memory_Space/Sys_Int_Enable_i_29" BEL
@@ -3181,6 +3179,7 @@ TIMEGRP clk_54e96cfd = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         "theTlpControl/Memory_Space/DG_Rst_Counter_6" BEL
         "theTlpControl/Memory_Space/DG_Rst_Counter_7" BEL
         "theTlpControl/Memory_Space/reg02_rd_r_0" BEL
+        "theTlpControl/Memory_Space/reg05_rd_r_0" BEL
         "theTlpControl/Memory_Space/reg06_rd_r_0" BEL
         "theTlpControl/Memory_Space/us_Param_Modified" BEL
         "theTlpControl/Memory_Space/ds_Param_Modified" BEL
@@ -9939,69 +9938,69 @@ TIMEGRP clk_54e96cfd = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         PIN
         "LoopBack_FIFO_Off.queue_buffer0/U0_H2B/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM36.ram_pins<62>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36_2.ramb36_i_pins<63>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36.ramb36_pins<63>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36_2.ramb36_i_pins<62>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36.ramb36_pins<62>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36_2.ramb36_i_pins<65>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36.ramb36_pins<65>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36_2.ramb36_i_pins<64>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36.ramb36_pins<64>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36_2.ramb36_i_pins<63>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36.ramb36_pins<63>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36_2.ramb36_i_pins<62>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36.ramb36_pins<62>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36_2.ramb36_i_pins<65>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36.ramb36_pins<65>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36_2.ramb36_i_pins<64>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36.ramb36_pins<64>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36_2.ramb36_i_pins<63>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36.ramb36_pins<63>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36_2.ramb36_i_pins<62>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36.ramb36_pins<62>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36_2.ramb36_i_pins<65>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36.ramb36_pins<65>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36_2.ramb36_i_pins<64>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36.ramb36_pins<64>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36_2.ramb36_i_pins<63>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36.ramb36_pins<63>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36_2.ramb36_i_pins<62>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36.ramb36_pins<62>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36_2.ramb36_i_pins<65>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36.ramb36_pins<65>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36_2.ramb36_i_pins<64>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36.ramb36_pins<64>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36_2.ramb36_i_pins<63>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36.ramb36_pins<63>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36_2.ramb36_i_pins<62>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36.ramb36_pins<62>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36_2.ramb36_i_pins<65>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36.ramb36_pins<65>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36_2.ramb36_i_pins<64>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36.ramb36_pins<64>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36_2.ramb36_i_pins<63>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36.ramb36_pins<63>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36_2.ramb36_i_pins<62>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36.ramb36_pins<62>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36_2.ramb36_i_pins<65>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36.ramb36_pins<65>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36_2.ramb36_i_pins<64>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36.ramb36_pins<64>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36_2.ramb36_i_pins<63>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36.ramb36_pins<63>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36_2.ramb36_i_pins<62>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36.ramb36_pins<62>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36_2.ramb36_i_pins<65>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36.ramb36_pins<65>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36_2.ramb36_i_pins<64>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36.ramb36_pins<64>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36_2.ramb36_i_pins<63>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36.ramb36_pins<63>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36_2.ramb36_i_pins<62>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36.ramb36_pins<62>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36_2.ramb36_i_pins<65>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36.ramb36_pins<65>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36_2.ramb36_i_pins<64>";
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36.ramb36_pins<64>";
 PIN make4Lanes.pcieCore/pcie_2_0_i/pcie_block_i_pins<741> = BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_block_i" PINNAME PIPECLK;
 PIN make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_pins<8> =
@@ -10297,29 +10296,31 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/gt_rx_phy_status_q"
         BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_eios_detected"
+        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/awake_in_progress_q"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/gt_rxelecidle_qq"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_eios_detected"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd2"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd3"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd1"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_rxvld_count_1"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_rxvld_count_2"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_rxvld_count_3"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_rxvld_count_4"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/awake_com_count_q_2"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/awake_com_count_q_0"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/awake_com_count_q_1"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/awake_com_count_q_2"
-        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/awake_com_count_q_3"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_rxvld_count_1"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_rxvld_count_4"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_rxvld_count_2"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_rxvld_count_3"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_state_rxvld_ei_FSM_FFd2"
         BEL
@@ -10344,8 +10345,6 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/awake_see_com_q"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_symbol_after_eios"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd2"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rxcharisk_q_0"
         BEL
@@ -10395,29 +10394,31 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rx_phy_status_q"
         BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_eios_detected"
+        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/awake_in_progress_q"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/gt_rxelecidle_qq"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_eios_detected"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd2"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd3"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd1"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_rxvld_count_1"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_rxvld_count_2"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_rxvld_count_3"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_rxvld_count_4"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/awake_com_count_q_2"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/awake_com_count_q_0"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/awake_com_count_q_1"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/awake_com_count_q_2"
-        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/awake_com_count_q_3"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_rxvld_count_1"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_rxvld_count_4"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_rxvld_count_2"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_rxvld_count_3"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_state_rxvld_ei_FSM_FFd2"
         BEL
@@ -10442,8 +10443,6 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/awake_see_com_q"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_symbol_after_eios"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd2"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/gt_rxcharisk_q_0"
         BEL
@@ -10493,29 +10492,31 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/gt_rx_phy_status_q"
         BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_eios_detected"
+        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/awake_in_progress_q"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/gt_rxelecidle_qq"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_eios_detected"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd2"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd3"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd1"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_rxvld_count_1"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_rxvld_count_2"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_rxvld_count_3"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_rxvld_count_4"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/awake_com_count_q_2"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/awake_com_count_q_0"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/awake_com_count_q_1"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/awake_com_count_q_2"
-        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/awake_com_count_q_3"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_rxvld_count_1"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_rxvld_count_4"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_rxvld_count_2"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_rxvld_count_3"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_state_rxvld_ei_FSM_FFd2"
         BEL
@@ -10540,8 +10541,6 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/awake_see_com_q"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_symbol_after_eios"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd2"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/gt_rxcharisk_q_0"
         BEL
@@ -10591,29 +10590,31 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/gt_rx_phy_status_q"
         BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_eios_detected"
+        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/awake_in_progress_q"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/gt_rxelecidle_qq"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_eios_detected"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd2"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd3"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd1"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_rxvld_count_1"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_rxvld_count_2"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_rxvld_count_3"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_rxvld_count_4"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/awake_com_count_q_2"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/awake_com_count_q_0"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/awake_com_count_q_1"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/awake_com_count_q_2"
-        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/awake_com_count_q_3"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_rxvld_count_1"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_rxvld_count_4"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_rxvld_count_2"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_rxvld_count_3"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_state_rxvld_ei_FSM_FFd2"
         BEL
@@ -10639,87 +10640,61 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_symbol_after_eios"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_RX_VALID_FILTER/reg_state_eios_det_FSM_FFd2"
-        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_DRP_CHANALIGN_FIX_3752/write_ts1_gated"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_DRP_CHANALIGN_FIX_3752/write_fts_gated"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_DRP_CHANALIGN_FIX_3752/daddr_v6pcie_0"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_DRP_CHANALIGN_FIX_3752/daddr_0"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_DRP_CHANALIGN_FIX_3752/daddr_v6pcie_1"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_DRP_CHANALIGN_FIX_3752/daddr_1"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd3"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_DRP_CHANALIGN_FIX_3752/drpstate_FSM_FFd3"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd4"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_DRP_CHANALIGN_FIX_3752/drpstate_FSM_FFd2"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd2"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd1"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_DRP_CHANALIGN_FIX_3752/drpstate_FSM_FFd1"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_DRP_CHANALIGN_FIX_3752/write_ts1_gated"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_DRP_CHANALIGN_FIX_3752/write_fts_gated"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_DRP_CHANALIGN_FIX_3752/daddr_v6pcie_0"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_DRP_CHANALIGN_FIX_3752/daddr_0"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_DRP_CHANALIGN_FIX_3752/daddr_v6pcie_1"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_DRP_CHANALIGN_FIX_3752/daddr_1"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd3"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_DRP_CHANALIGN_FIX_3752/drpstate_FSM_FFd3"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd4"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_DRP_CHANALIGN_FIX_3752/drpstate_FSM_FFd2"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd2"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd1"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_DRP_CHANALIGN_FIX_3752/drpstate_FSM_FFd1"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_DRP_CHANALIGN_FIX_3752/write_ts1_gated"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_DRP_CHANALIGN_FIX_3752/write_fts_gated"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_DRP_CHANALIGN_FIX_3752/daddr_v6pcie_0"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_DRP_CHANALIGN_FIX_3752/daddr_0"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_DRP_CHANALIGN_FIX_3752/daddr_v6pcie_1"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_DRP_CHANALIGN_FIX_3752/daddr_1"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd3"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_DRP_CHANALIGN_FIX_3752/drpstate_FSM_FFd3"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd4"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_DRP_CHANALIGN_FIX_3752/drpstate_FSM_FFd2"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd2"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd1"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_DRP_CHANALIGN_FIX_3752/drpstate_FSM_FFd1"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_DRP_CHANALIGN_FIX_3752/write_ts1_gated"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_DRP_CHANALIGN_FIX_3752/write_fts_gated"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_DRP_CHANALIGN_FIX_3752/daddr_v6pcie_0"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_DRP_CHANALIGN_FIX_3752/daddr_0"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_DRP_CHANALIGN_FIX_3752/daddr_v6pcie_1"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_DRP_CHANALIGN_FIX_3752/daddr_1"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd3"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_DRP_CHANALIGN_FIX_3752/drpstate_FSM_FFd3"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd4"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_DRP_CHANALIGN_FIX_3752/drpstate_FSM_FFd2"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd2"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_DRP_CHANALIGN_FIX_3752/drpstate_v6pcie_FSM_FFd1"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2_0"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2_1"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2_2"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2_3"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2_4"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2_5"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2_6"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2_7"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_DRP_CHANALIGN_FIX_3752/drpstate_FSM_FFd1"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter_0"
         BEL
@@ -10737,21 +10712,37 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter_7"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/ENPMAPHASEALIGN"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2_0"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2_1"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2_2"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2_3"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2_4"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2_5"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2_6"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/waitcounter2_7"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/PMASETPHASE"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/OUT_DIV_RESET"
         BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/ratedone_r"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/ENPMAPHASEALIGN"
+        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/gt_phystatus_q"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/TXALIGNDISABLE"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/ratedone_r2"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/ratedone_r"
-        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/USER_PHYSTATUS"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/ratedone_r2"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/SYNC_DONE"
         BEL
@@ -10795,27 +10786,11 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/state_FSM_FFd5"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/state_FSM_FFd1"
-        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/state_FSM_FFd3"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/state_FSM_FFd2"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2_0"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2_1"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2_2"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2_3"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2_4"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2_5"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2_6"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2_7"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[3].GTX_TX_SYNC/state_FSM_FFd1"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter_0"
         BEL
@@ -10833,21 +10808,37 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter_7"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/ENPMAPHASEALIGN"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2_0"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2_1"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2_2"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2_3"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2_4"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2_5"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2_6"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/waitcounter2_7"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/PMASETPHASE"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/OUT_DIV_RESET"
         BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/ratedone_r"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/ENPMAPHASEALIGN"
+        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/gt_phystatus_q"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/TXALIGNDISABLE"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/ratedone_r2"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/ratedone_r"
-        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/USER_PHYSTATUS"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/ratedone_r2"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/SYNC_DONE"
         BEL
@@ -10891,27 +10882,11 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/state_FSM_FFd5"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/state_FSM_FFd1"
-        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/state_FSM_FFd3"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/state_FSM_FFd2"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2_0"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2_1"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2_2"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2_3"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2_4"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2_5"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2_6"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2_7"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[2].GTX_TX_SYNC/state_FSM_FFd1"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter_0"
         BEL
@@ -10929,21 +10904,37 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter_7"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/ENPMAPHASEALIGN"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2_0"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2_1"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2_2"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2_3"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2_4"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2_5"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2_6"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/waitcounter2_7"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/PMASETPHASE"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/OUT_DIV_RESET"
         BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/ratedone_r"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/ENPMAPHASEALIGN"
+        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/gt_phystatus_q"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/TXALIGNDISABLE"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/ratedone_r2"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/ratedone_r"
-        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/USER_PHYSTATUS"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/ratedone_r2"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/SYNC_DONE"
         BEL
@@ -10987,27 +10978,11 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/state_FSM_FFd5"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/state_FSM_FFd1"
-        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/state_FSM_FFd3"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/state_FSM_FFd2"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2_0"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2_1"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2_2"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2_3"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2_4"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2_5"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2_6"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2_7"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[1].GTX_TX_SYNC/state_FSM_FFd1"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter_0"
         BEL
@@ -11025,21 +11000,37 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter_7"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/ENPMAPHASEALIGN"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2_0"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2_1"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2_2"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2_3"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2_4"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2_5"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2_6"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/waitcounter2_7"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/PMASETPHASE"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/OUT_DIV_RESET"
         BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/ratedone_r"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/ENPMAPHASEALIGN"
+        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/gt_phystatus_q"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/TXALIGNDISABLE"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/ratedone_r2"
-        BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/ratedone_r"
-        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/USER_PHYSTATUS"
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/ratedone_r2"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/SYNC_DONE"
         BEL
@@ -11083,14 +11074,14 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/state_FSM_FFd5"
         BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/state_FSM_FFd1"
-        BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/state_FSM_FFd3"
         BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/state_FSM_FFd2"
-        BEL "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/phy_rdy_n_v6pcie4" BEL
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/local_pcs_reset" BEL
+        BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_TX_SYNC/state_FSM_FFd1"
+        BEL "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/local_pcs_reset" BEL
         "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/local_pcs_reset_done" BEL
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/phy_rdy_n" BEL
         "make4Lanes.pcieCore/pcie_clocking_i/reg_clock_locked_0" BEL
         "make4Lanes.pcieCore/pcie_clocking_i/reg_clock_locked_1" BEL
         "make4Lanes.pcieCore/pcie_clocking_i/GEN1_LINK.pipe_clk_bufg" BEL
@@ -11245,18 +11236,6 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         "theTlpControl/Memory_Space/reg04_rd_r_29" BEL
         "theTlpControl/Memory_Space/reg04_rd_r_30" BEL
         "theTlpControl/Memory_Space/reg04_rd_r_31" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_0" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_1" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_2" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_3" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_4" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_5" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_6" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_7" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_8" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_9" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_10" BEL
-        "theTlpControl/Memory_Space/reg05_rd_r_11" BEL
         "theTlpControl/Memory_Space/reg07_rd_r_0" BEL
         "theTlpControl/Memory_Space/reg07_rd_r_1" BEL
         "theTlpControl/Memory_Space/reg07_rd_r_2" BEL
@@ -11636,6 +11615,8 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         "theTlpControl/Memory_Space/Reg_WrMuxer_Hi_30" BEL
         "theTlpControl/Memory_Space/Reg_WrMuxer_Hi_31" BEL
         "theTlpControl/Memory_Space/Reg_WrMuxer_Hi_32" BEL
+        "theTlpControl/Memory_Space/Reg_WrMuxer_Hi_33" BEL
+        "theTlpControl/Memory_Space/Reg_WrMuxer_Lo_49" BEL
         "theTlpControl/Memory_Space/Reg_WrMuxer_Lo_48" BEL
         "theTlpControl/Memory_Space/Reg_WrMuxer_Lo_47" BEL
         "theTlpControl/Memory_Space/Reg_WrMuxer_Lo_46" BEL
@@ -11668,6 +11649,7 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         "theTlpControl/Memory_Space/reg03_tv_i" BEL
         "theTlpControl/Memory_Space/reg04_tv_i" BEL
         "theTlpControl/Memory_Space/reg05_tv_i" BEL
+        "theTlpControl/Memory_Space/reg06_tv_i" BEL
         "theTlpControl/Memory_Space/Regs_WrEn_r2" BEL
         "theTlpControl/Memory_Space/Regs_WrDin_r2_0" BEL
         "theTlpControl/Memory_Space/Regs_WrDin_r2_1" BEL
@@ -11933,6 +11915,38 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         "theTlpControl/Memory_Space/reg04_td_i_29" BEL
         "theTlpControl/Memory_Space/reg04_td_i_30" BEL
         "theTlpControl/Memory_Space/reg04_td_i_31" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_0" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_1" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_2" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_3" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_4" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_5" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_6" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_7" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_8" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_9" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_10" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_11" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_12" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_13" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_14" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_15" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_16" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_17" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_18" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_19" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_20" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_21" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_22" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_23" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_24" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_25" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_26" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_27" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_28" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_29" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_30" BEL
+        "theTlpControl/Memory_Space/reg06_td_i_31" BEL
         "theTlpControl/Memory_Space/Sys_Int_Enable_i_31" BEL
         "theTlpControl/Memory_Space/Sys_Int_Enable_i_30" BEL
         "theTlpControl/Memory_Space/Sys_Int_Enable_i_29" BEL
@@ -12523,6 +12537,7 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         "theTlpControl/Memory_Space/DG_Rst_Counter_6" BEL
         "theTlpControl/Memory_Space/DG_Rst_Counter_7" BEL
         "theTlpControl/Memory_Space/reg02_rd_r_0" BEL
+        "theTlpControl/Memory_Space/reg05_rd_r_0" BEL
         "theTlpControl/Memory_Space/reg06_rd_r_0" BEL
         "theTlpControl/Memory_Space/us_Param_Modified" BEL
         "theTlpControl/Memory_Space/ds_Param_Modified" BEL
@@ -19281,69 +19296,69 @@ TIMEGRP CLK_125 = BEL "make4Lanes.pcieCore/cfg_device_number_d_0" BEL
         PIN
         "LoopBack_FIFO_Off.queue_buffer0/U0_H2B/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_noinit.ram/SDP.SIMPLE_PRIM36.ram_pins<62>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36_2.ramb36_i_pins<63>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36.ramb36_pins<63>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36_2.ramb36_i_pins<62>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36.ramb36_pins<62>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36_2.ramb36_i_pins<65>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36.ramb36_pins<65>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36_2.ramb36_i_pins<64>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[0].ram/use_ramb36.ramb36_pins<64>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36_2.ramb36_i_pins<63>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36.ramb36_pins<63>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36_2.ramb36_i_pins<62>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36.ramb36_pins<62>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36_2.ramb36_i_pins<65>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36.ramb36_pins<65>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36_2.ramb36_i_pins<64>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[1].ram/use_ramb36.ramb36_pins<64>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36_2.ramb36_i_pins<63>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36.ramb36_pins<63>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36_2.ramb36_i_pins<62>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36.ramb36_pins<62>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36_2.ramb36_i_pins<65>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36.ramb36_pins<65>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36_2.ramb36_i_pins<64>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[2].ram/use_ramb36.ramb36_pins<64>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36_2.ramb36_i_pins<63>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36.ramb36_pins<63>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36_2.ramb36_i_pins<62>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36.ramb36_pins<62>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36_2.ramb36_i_pins<65>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36.ramb36_pins<65>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36_2.ramb36_i_pins<64>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_rx/brams[3].ram/use_ramb36.ramb36_pins<64>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36_2.ramb36_i_pins<63>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36.ramb36_pins<63>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36_2.ramb36_i_pins<62>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36.ramb36_pins<62>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36_2.ramb36_i_pins<65>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36.ramb36_pins<65>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36_2.ramb36_i_pins<64>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[0].ram/use_ramb36.ramb36_pins<64>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36_2.ramb36_i_pins<63>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36.ramb36_pins<63>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36_2.ramb36_i_pins<62>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36.ramb36_pins<62>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36_2.ramb36_i_pins<65>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36.ramb36_pins<65>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36_2.ramb36_i_pins<64>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[1].ram/use_ramb36.ramb36_pins<64>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36_2.ramb36_i_pins<63>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36.ramb36_pins<63>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36_2.ramb36_i_pins<62>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36.ramb36_pins<62>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36_2.ramb36_i_pins<65>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36.ramb36_pins<65>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36_2.ramb36_i_pins<64>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[2].ram/use_ramb36.ramb36_pins<64>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36_2.ramb36_i_pins<63>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36.ramb36_pins<63>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36_2.ramb36_i_pins<62>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36.ramb36_pins<62>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36_2.ramb36_i_pins<65>"
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36.ramb36_pins<65>"
         PIN
-        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36_2.ramb36_i_pins<64>";
+        "make4Lanes.pcieCore/pcie_2_0_i/pcie_bram_i/pcie_brams_tx/brams[3].ram/use_ramb36.ramb36_pins<64>";
 PIN make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX_pins<74> =
         BEL "make4Lanes.pcieCore/pcie_2_0_i/pcie_gt_i/gtx_v6_i/GTXD[0].GTX"
         PINNAME MGTREFCLKRX0;
@@ -20108,62 +20123,56 @@ TIMEGRP adc_clk_in_p = BEL "ad9467_1/reg01_rd_current_reflength_0" BEL
         "ad9467_1/reg04_soa_length_cur_29" BEL
         "ad9467_1/reg04_soa_length_cur_30" BEL
         "ad9467_1/reg04_soa_length_cur_31" BEL "ad9467_1/resetfifo" BEL
-        "ad9467_1/reg06_rd" BEL "ad9467_1/reg01_rd_0" BEL
-        "ad9467_1/reg01_rd_1" BEL "ad9467_1/reg01_rd_2" BEL
-        "ad9467_1/reg01_rd_3" BEL "ad9467_1/reg01_rd_4" BEL
-        "ad9467_1/reg01_rd_5" BEL "ad9467_1/reg01_rd_6" BEL
-        "ad9467_1/reg01_rd_7" BEL "ad9467_1/reg01_rd_8" BEL
-        "ad9467_1/reg01_rd_9" BEL "ad9467_1/reg01_rd_10" BEL
-        "ad9467_1/reg01_rd_11" BEL "ad9467_1/reg01_rd_12" BEL
-        "ad9467_1/reg01_rd_13" BEL "ad9467_1/reg01_rd_14" BEL
-        "ad9467_1/reg01_rd_15" BEL "ad9467_1/reg01_rd_16" BEL
-        "ad9467_1/reg01_rd_17" BEL "ad9467_1/reg01_rd_18" BEL
-        "ad9467_1/reg01_rd_19" BEL "ad9467_1/reg01_rd_20" BEL
-        "ad9467_1/reg01_rd_21" BEL "ad9467_1/reg01_rd_22" BEL
-        "ad9467_1/reg01_rd_23" BEL "ad9467_1/reg01_rd_24" BEL
-        "ad9467_1/reg01_rd_25" BEL "ad9467_1/reg01_rd_26" BEL
-        "ad9467_1/reg01_rd_27" BEL "ad9467_1/reg01_rd_28" BEL
-        "ad9467_1/reg01_rd_29" BEL "ad9467_1/reg01_rd_30" BEL
-        "ad9467_1/reg01_rd_31" BEL "ad9467_1/reg03_rd_0" BEL
-        "ad9467_1/reg03_rd_1" BEL "ad9467_1/reg03_rd_2" BEL
-        "ad9467_1/reg03_rd_3" BEL "ad9467_1/reg03_rd_4" BEL
-        "ad9467_1/reg03_rd_5" BEL "ad9467_1/reg03_rd_6" BEL
-        "ad9467_1/reg03_rd_7" BEL "ad9467_1/reg03_rd_8" BEL
-        "ad9467_1/reg03_rd_9" BEL "ad9467_1/reg03_rd_10" BEL
-        "ad9467_1/reg03_rd_11" BEL "ad9467_1/reg03_rd_12" BEL
-        "ad9467_1/reg03_rd_13" BEL "ad9467_1/reg03_rd_14" BEL
-        "ad9467_1/reg03_rd_15" BEL "ad9467_1/reg03_rd_16" BEL
-        "ad9467_1/reg03_rd_17" BEL "ad9467_1/reg03_rd_18" BEL
-        "ad9467_1/reg03_rd_19" BEL "ad9467_1/reg03_rd_20" BEL
-        "ad9467_1/reg03_rd_21" BEL "ad9467_1/reg03_rd_22" BEL
-        "ad9467_1/reg03_rd_23" BEL "ad9467_1/reg03_rd_24" BEL
-        "ad9467_1/reg03_rd_25" BEL "ad9467_1/reg03_rd_26" BEL
-        "ad9467_1/reg03_rd_27" BEL "ad9467_1/reg03_rd_28" BEL
-        "ad9467_1/reg03_rd_29" BEL "ad9467_1/reg03_rd_30" BEL
-        "ad9467_1/reg03_rd_31" BEL "ad9467_1/reg04_rd_0" BEL
-        "ad9467_1/reg04_rd_1" BEL "ad9467_1/reg04_rd_2" BEL
-        "ad9467_1/reg04_rd_3" BEL "ad9467_1/reg04_rd_4" BEL
-        "ad9467_1/reg04_rd_5" BEL "ad9467_1/reg04_rd_6" BEL
-        "ad9467_1/reg04_rd_7" BEL "ad9467_1/reg04_rd_8" BEL
-        "ad9467_1/reg04_rd_9" BEL "ad9467_1/reg04_rd_10" BEL
-        "ad9467_1/reg04_rd_11" BEL "ad9467_1/reg04_rd_12" BEL
-        "ad9467_1/reg04_rd_13" BEL "ad9467_1/reg04_rd_14" BEL
-        "ad9467_1/reg04_rd_15" BEL "ad9467_1/reg04_rd_16" BEL
-        "ad9467_1/reg04_rd_17" BEL "ad9467_1/reg04_rd_18" BEL
-        "ad9467_1/reg04_rd_19" BEL "ad9467_1/reg04_rd_20" BEL
-        "ad9467_1/reg04_rd_21" BEL "ad9467_1/reg04_rd_22" BEL
-        "ad9467_1/reg04_rd_23" BEL "ad9467_1/reg04_rd_24" BEL
-        "ad9467_1/reg04_rd_25" BEL "ad9467_1/reg04_rd_26" BEL
-        "ad9467_1/reg04_rd_27" BEL "ad9467_1/reg04_rd_28" BEL
-        "ad9467_1/reg04_rd_29" BEL "ad9467_1/reg04_rd_30" BEL
-        "ad9467_1/reg04_rd_31" BEL "ad9467_1/reg02_rd" BEL
-        "ad9467_1/reg05_rd_0" BEL "ad9467_1/reg05_rd_1" BEL
-        "ad9467_1/reg05_rd_2" BEL "ad9467_1/reg05_rd_3" BEL
-        "ad9467_1/reg05_rd_4" BEL "ad9467_1/reg05_rd_5" BEL
-        "ad9467_1/reg05_rd_6" BEL "ad9467_1/reg05_rd_7" BEL
-        "ad9467_1/reg05_rd_8" BEL "ad9467_1/reg05_rd_9" BEL
-        "ad9467_1/reg05_rd_10" BEL "ad9467_1/reg05_rd_11" BEL
-        "ad9467_1/reg09_rd_0" BEL "ad9467_1/reg09_rd_1" BEL
+        "ad9467_1/reg01_rd_0" BEL "ad9467_1/reg01_rd_1" BEL
+        "ad9467_1/reg01_rd_2" BEL "ad9467_1/reg01_rd_3" BEL
+        "ad9467_1/reg01_rd_4" BEL "ad9467_1/reg01_rd_5" BEL
+        "ad9467_1/reg01_rd_6" BEL "ad9467_1/reg01_rd_7" BEL
+        "ad9467_1/reg01_rd_8" BEL "ad9467_1/reg01_rd_9" BEL
+        "ad9467_1/reg01_rd_10" BEL "ad9467_1/reg01_rd_11" BEL
+        "ad9467_1/reg01_rd_12" BEL "ad9467_1/reg01_rd_13" BEL
+        "ad9467_1/reg01_rd_14" BEL "ad9467_1/reg01_rd_15" BEL
+        "ad9467_1/reg01_rd_16" BEL "ad9467_1/reg01_rd_17" BEL
+        "ad9467_1/reg01_rd_18" BEL "ad9467_1/reg01_rd_19" BEL
+        "ad9467_1/reg01_rd_20" BEL "ad9467_1/reg01_rd_21" BEL
+        "ad9467_1/reg01_rd_22" BEL "ad9467_1/reg01_rd_23" BEL
+        "ad9467_1/reg01_rd_24" BEL "ad9467_1/reg01_rd_25" BEL
+        "ad9467_1/reg01_rd_26" BEL "ad9467_1/reg01_rd_27" BEL
+        "ad9467_1/reg01_rd_28" BEL "ad9467_1/reg01_rd_29" BEL
+        "ad9467_1/reg01_rd_30" BEL "ad9467_1/reg01_rd_31" BEL
+        "ad9467_1/reg03_rd_0" BEL "ad9467_1/reg03_rd_1" BEL
+        "ad9467_1/reg03_rd_2" BEL "ad9467_1/reg03_rd_3" BEL
+        "ad9467_1/reg03_rd_4" BEL "ad9467_1/reg03_rd_5" BEL
+        "ad9467_1/reg03_rd_6" BEL "ad9467_1/reg03_rd_7" BEL
+        "ad9467_1/reg03_rd_8" BEL "ad9467_1/reg03_rd_9" BEL
+        "ad9467_1/reg03_rd_10" BEL "ad9467_1/reg03_rd_11" BEL
+        "ad9467_1/reg03_rd_12" BEL "ad9467_1/reg03_rd_13" BEL
+        "ad9467_1/reg03_rd_14" BEL "ad9467_1/reg03_rd_15" BEL
+        "ad9467_1/reg03_rd_16" BEL "ad9467_1/reg03_rd_17" BEL
+        "ad9467_1/reg03_rd_18" BEL "ad9467_1/reg03_rd_19" BEL
+        "ad9467_1/reg03_rd_20" BEL "ad9467_1/reg03_rd_21" BEL
+        "ad9467_1/reg03_rd_22" BEL "ad9467_1/reg03_rd_23" BEL
+        "ad9467_1/reg03_rd_24" BEL "ad9467_1/reg03_rd_25" BEL
+        "ad9467_1/reg03_rd_26" BEL "ad9467_1/reg03_rd_27" BEL
+        "ad9467_1/reg03_rd_28" BEL "ad9467_1/reg03_rd_29" BEL
+        "ad9467_1/reg03_rd_30" BEL "ad9467_1/reg03_rd_31" BEL
+        "ad9467_1/reg04_rd_0" BEL "ad9467_1/reg04_rd_1" BEL
+        "ad9467_1/reg04_rd_2" BEL "ad9467_1/reg04_rd_3" BEL
+        "ad9467_1/reg04_rd_4" BEL "ad9467_1/reg04_rd_5" BEL
+        "ad9467_1/reg04_rd_6" BEL "ad9467_1/reg04_rd_7" BEL
+        "ad9467_1/reg04_rd_8" BEL "ad9467_1/reg04_rd_9" BEL
+        "ad9467_1/reg04_rd_10" BEL "ad9467_1/reg04_rd_11" BEL
+        "ad9467_1/reg04_rd_12" BEL "ad9467_1/reg04_rd_13" BEL
+        "ad9467_1/reg04_rd_14" BEL "ad9467_1/reg04_rd_15" BEL
+        "ad9467_1/reg04_rd_16" BEL "ad9467_1/reg04_rd_17" BEL
+        "ad9467_1/reg04_rd_18" BEL "ad9467_1/reg04_rd_19" BEL
+        "ad9467_1/reg04_rd_20" BEL "ad9467_1/reg04_rd_21" BEL
+        "ad9467_1/reg04_rd_22" BEL "ad9467_1/reg04_rd_23" BEL
+        "ad9467_1/reg04_rd_24" BEL "ad9467_1/reg04_rd_25" BEL
+        "ad9467_1/reg04_rd_26" BEL "ad9467_1/reg04_rd_27" BEL
+        "ad9467_1/reg04_rd_28" BEL "ad9467_1/reg04_rd_29" BEL
+        "ad9467_1/reg04_rd_30" BEL "ad9467_1/reg04_rd_31" BEL
+        "ad9467_1/reg02_rd" BEL "ad9467_1/reg05_rd" BEL "ad9467_1/reg06_rd"
+        BEL "ad9467_1/reg09_rd_0" BEL "ad9467_1/reg09_rd_1" BEL
         "ad9467_1/reg09_rd_2" BEL "ad9467_1/reg09_rd_3" BEL
         "ad9467_1/reg09_rd_4" BEL "ad9467_1/reg09_rd_5" BEL
         "ad9467_1/reg09_rd_6" BEL "ad9467_1/reg09_rd_7" BEL
@@ -20173,34 +20182,34 @@ TIMEGRP adc_clk_in_p = BEL "ad9467_1/reg01_rd_current_reflength_0" BEL
         "ad9467_1/real_data_out_61" BEL "ad9467_1/real_data_out_60" BEL
         "ad9467_1/real_data_out_59" BEL "ad9467_1/real_data_out_58" BEL
         "ad9467_1/real_data_out_57" BEL "ad9467_1/real_data_out_56" BEL
-        "ad9467_1/real_data_out_55" BEL "ad9467_1/real_data_out_54" BEL
-        "ad9467_1/real_data_out_53" BEL "ad9467_1/real_data_out_50" BEL
-        "ad9467_1/real_data_out_52" BEL "ad9467_1/real_data_out_51" BEL
+        "ad9467_1/real_data_out_55" BEL "ad9467_1/real_data_out_52" BEL
+        "ad9467_1/real_data_out_54" BEL "ad9467_1/real_data_out_53" BEL
+        "ad9467_1/real_data_out_51" BEL "ad9467_1/real_data_out_50" BEL
         "ad9467_1/real_data_out_49" BEL "ad9467_1/real_data_out_48" BEL
         "ad9467_1/real_data_out_47" BEL "ad9467_1/real_data_out_46" BEL
-        "ad9467_1/real_data_out_45" BEL "ad9467_1/real_data_out_44" BEL
-        "ad9467_1/real_data_out_43" BEL "ad9467_1/real_data_out_42" BEL
+        "ad9467_1/real_data_out_43" BEL "ad9467_1/real_data_out_45" BEL
+        "ad9467_1/real_data_out_44" BEL "ad9467_1/real_data_out_42" BEL
         "ad9467_1/real_data_out_41" BEL "ad9467_1/real_data_out_40" BEL
         "ad9467_1/real_data_out_39" BEL "ad9467_1/real_data_out_38" BEL
-        "ad9467_1/real_data_out_37" BEL "ad9467_1/real_data_out_36" BEL
-        "ad9467_1/real_data_out_33" BEL "ad9467_1/real_data_out_35" BEL
-        "ad9467_1/real_data_out_34" BEL "ad9467_1/real_data_out_32" BEL
+        "ad9467_1/real_data_out_37" BEL "ad9467_1/real_data_out_34" BEL
+        "ad9467_1/real_data_out_36" BEL "ad9467_1/real_data_out_35" BEL
+        "ad9467_1/real_data_out_33" BEL "ad9467_1/real_data_out_32" BEL
         "ad9467_1/real_data_out_31" BEL "ad9467_1/real_data_out_30" BEL
         "ad9467_1/real_data_out_29" BEL "ad9467_1/real_data_out_28" BEL
         "ad9467_1/real_data_out_27" BEL "ad9467_1/real_data_out_26" BEL
         "ad9467_1/real_data_out_25" BEL "ad9467_1/real_data_out_24" BEL
         "ad9467_1/real_data_out_23" BEL "ad9467_1/real_data_out_22" BEL
         "ad9467_1/real_data_out_21" BEL "ad9467_1/real_data_out_20" BEL
-        "ad9467_1/real_data_out_19" BEL "ad9467_1/real_data_out_16" BEL
-        "ad9467_1/real_data_out_18" BEL "ad9467_1/real_data_out_17" BEL
+        "ad9467_1/real_data_out_17" BEL "ad9467_1/real_data_out_19" BEL
+        "ad9467_1/real_data_out_18" BEL "ad9467_1/real_data_out_16" BEL
         "ad9467_1/real_data_out_15" BEL "ad9467_1/real_data_out_14" BEL
         "ad9467_1/real_data_out_13" BEL "ad9467_1/real_data_out_12" BEL
         "ad9467_1/real_data_out_11" BEL "ad9467_1/real_data_out_10" BEL
         "ad9467_1/real_data_out_9" BEL "ad9467_1/real_data_out_8" BEL
         "ad9467_1/real_data_out_7" BEL "ad9467_1/real_data_out_6" BEL
         "ad9467_1/real_data_out_5" BEL "ad9467_1/real_data_out_4" BEL
-        "ad9467_1/real_data_out_3" BEL "ad9467_1/real_data_out_2" BEL
-        "ad9467_1/real_data_out_1" BEL "ad9467_1/real_data_out_0" BEL
+        "ad9467_1/real_data_out_3" BEL "ad9467_1/real_data_out_0" BEL
+        "ad9467_1/real_data_out_2" BEL "ad9467_1/real_data_out_1" BEL
         "ad9467_1/reg08_rd_0" BEL "ad9467_1/reg08_rd_1" BEL
         "ad9467_1/reg08_rd_2" BEL "ad9467_1/reg08_rd_3" BEL
         "ad9467_1/reg08_rd_4" BEL "ad9467_1/reg08_rd_5" BEL
@@ -20226,67 +20235,61 @@ TIMEGRP adc_clk_in_p = BEL "ad9467_1/reg01_rd_current_reflength_0" BEL
         "ad9467_1/reg07_rd_28" BEL "ad9467_1/reg07_rd_29" BEL
         "ad9467_1/reg07_rd_30" BEL "ad9467_1/reg07_rd_31" BEL
         "ad9467_1/count_0" BEL "ad9467_1/count_1" BEL
-        "ad9467_1/reflength_counter_0" BEL "ad9467_1/reflength_counter_1" BEL
-        "ad9467_1/reflength_counter_2" BEL "ad9467_1/reflength_counter_3" BEL
-        "ad9467_1/reflength_counter_6" BEL "ad9467_1/reflength_counter_4" BEL
-        "ad9467_1/reflength_counter_5" BEL "ad9467_1/reflength_counter_7" BEL
+        "ad9467_1/reflength_counter_0" BEL "ad9467_1/reflength_counter_3" BEL
+        "ad9467_1/reflength_counter_1" BEL "ad9467_1/reflength_counter_2" BEL
+        "ad9467_1/reflength_counter_4" BEL "ad9467_1/reflength_counter_5" BEL
+        "ad9467_1/reflength_counter_6" BEL "ad9467_1/reflength_counter_7" BEL
         "ad9467_1/reflength_counter_8" BEL "ad9467_1/reflength_counter_9" BEL
-        "ad9467_1/reflength_counter_10" BEL "ad9467_1/reflength_counter_11"
-        BEL "ad9467_1/reflength_counter_12" BEL
-        "ad9467_1/reflength_counter_15" BEL "ad9467_1/reflength_counter_13"
-        BEL "ad9467_1/reflength_counter_14" BEL
+        "ad9467_1/reflength_counter_12" BEL "ad9467_1/reflength_counter_10"
+        BEL "ad9467_1/reflength_counter_11" BEL
+        "ad9467_1/reflength_counter_13" BEL "ad9467_1/reflength_counter_14"
+        BEL "ad9467_1/reflength_counter_15" BEL
         "ad9467_1/reflength_counter_16" BEL "ad9467_1/reflength_counter_17"
         BEL "ad9467_1/reflength_counter_18" BEL
-        "ad9467_1/reflength_counter_19" BEL "ad9467_1/reflength_counter_20"
-        BEL "ad9467_1/reflength_counter_21" BEL
+        "ad9467_1/reflength_counter_21" BEL "ad9467_1/reflength_counter_19"
+        BEL "ad9467_1/reflength_counter_20" BEL
         "ad9467_1/reflength_counter_22" BEL "ad9467_1/reflength_counter_23"
         BEL "ad9467_1/reflength_counter_24" BEL
         "ad9467_1/reflength_counter_25" BEL "ad9467_1/reflength_counter_26"
         BEL "ad9467_1/reflength_counter_27" BEL
-        "ad9467_1/reflength_counter_28" BEL "ad9467_1/reflength_counter_29"
-        BEL "ad9467_1/reflength_counter_30" BEL
-        "ad9467_1/reflength_counter_31" BEL "ad9467_1/bram_addr_0" BEL
-        "ad9467_1/bram_addr_1" BEL "ad9467_1/bram_addr_2" BEL
-        "ad9467_1/bram_addr_3" BEL "ad9467_1/bram_addr_4" BEL
-        "ad9467_1/bram_addr_5" BEL "ad9467_1/bram_addr_6" BEL
-        "ad9467_1/bram_addr_7" BEL "ad9467_1/bram_addr_8" BEL
-        "ad9467_1/bram_addr_9" BEL "ad9467_1/bram_addr_10" BEL
-        "ad9467_1/bram_addr_11" BEL "ad9467_1/count_ref_0" BEL
+        "ad9467_1/reflength_counter_30" BEL "ad9467_1/reflength_counter_28"
+        BEL "ad9467_1/reflength_counter_29" BEL
+        "ad9467_1/reflength_counter_31" BEL "ad9467_1/count_ref_0" BEL
         "ad9467_1/count_ref_1" BEL "ad9467_1/count_ref_2" BEL
         "ad9467_1/count_ref_3" BEL "ad9467_1/count_ref_4" BEL
         "ad9467_1/count_ref_5" BEL "ad9467_1/count_ref_6" BEL
         "ad9467_1/count_ref_7" BEL "ad9467_1/count_ref_8" BEL
         "ad9467_1/count_ref_9" BEL "ad9467_1/count_ref_10" BEL
         "ad9467_1/count_ref_11" BEL "ad9467_1/strobe_counter_0" BEL
-        "ad9467_1/strobe_counter_1" BEL "ad9467_1/strobe_counter_2" BEL
-        "ad9467_1/strobe_counter_5" BEL "ad9467_1/strobe_counter_3" BEL
-        "ad9467_1/strobe_counter_4" BEL "ad9467_1/strobe_counter_6" BEL
+        "ad9467_1/strobe_counter_3" BEL "ad9467_1/strobe_counter_1" BEL
+        "ad9467_1/strobe_counter_2" BEL "ad9467_1/strobe_counter_4" BEL
+        "ad9467_1/strobe_counter_5" BEL "ad9467_1/strobe_counter_6" BEL
         "ad9467_1/strobe_counter_7" BEL "ad9467_1/strobe_counter_8" BEL
-        "ad9467_1/strobe_counter_9" BEL "ad9467_1/strobe_counter_10" BEL
-        "ad9467_1/strobe_counter_11" BEL "ad9467_1/strobe_counter_14" BEL
-        "ad9467_1/strobe_counter_12" BEL "ad9467_1/strobe_counter_13" BEL
+        "ad9467_1/strobe_counter_9" BEL "ad9467_1/strobe_counter_12" BEL
+        "ad9467_1/strobe_counter_10" BEL "ad9467_1/strobe_counter_11" BEL
+        "ad9467_1/strobe_counter_13" BEL "ad9467_1/strobe_counter_14" BEL
         "ad9467_1/strobe_counter_15" BEL "ad9467_1/strobe_counter_16" BEL
         "ad9467_1/strobe_counter_17" BEL "ad9467_1/strobe_counter_18" BEL
-        "ad9467_1/strobe_counter_19" BEL "ad9467_1/strobe_counter_20" BEL
-        "ad9467_1/strobe_counter_21" BEL "ad9467_1/strobe_counter_22" BEL
+        "ad9467_1/strobe_counter_21" BEL "ad9467_1/strobe_counter_19" BEL
+        "ad9467_1/strobe_counter_20" BEL "ad9467_1/strobe_counter_22" BEL
         "ad9467_1/strobe_counter_23" BEL "ad9467_1/strobe_counter_24" BEL
         "ad9467_1/strobe_counter_25" BEL "ad9467_1/strobe_counter_26" BEL
-        "ad9467_1/strobe_counter_27" BEL "ad9467_1/strobe_counter_28" BEL
-        "ad9467_1/strobe_counter_31" BEL "ad9467_1/strobe_counter_29" BEL
-        "ad9467_1/strobe_counter_30" BEL "ad9467_1/soa_counter_0" BEL
+        "ad9467_1/strobe_counter_27" BEL "ad9467_1/strobe_counter_30" BEL
+        "ad9467_1/strobe_counter_28" BEL "ad9467_1/strobe_counter_29" BEL
+        "ad9467_1/strobe_counter_31" BEL "ad9467_1/soa_counter_0" BEL
         "ad9467_1/soa_counter_1" BEL "ad9467_1/soa_counter_2" BEL
         "ad9467_1/soa_counter_3" BEL "ad9467_1/soa_counter_4" BEL
-        "ad9467_1/soa_counter_5" BEL "ad9467_1/soa_counter_8" BEL
-        "ad9467_1/soa_counter_6" BEL "ad9467_1/soa_counter_7" BEL
+        "ad9467_1/soa_counter_7" BEL "ad9467_1/soa_counter_5" BEL
+        "ad9467_1/soa_counter_6" BEL "ad9467_1/soa_counter_8" BEL
         "ad9467_1/soa_counter_9" BEL "ad9467_1/soa_counter_10" BEL
         "ad9467_1/soa_counter_11" BEL "ad9467_1/soa_counter_12" BEL
-        "ad9467_1/soa_counter_13" BEL "ad9467_1/soa_counter_14" BEL
-        "ad9467_1/soa_counter_17" BEL "ad9467_1/soa_counter_15" BEL
-        "ad9467_1/soa_counter_16" BEL "ad9467_1/soa_counter_18" BEL
+        "ad9467_1/soa_counter_13" BEL "ad9467_1/soa_counter_16" BEL
+        "ad9467_1/soa_counter_14" BEL "ad9467_1/soa_counter_15" BEL
+        "ad9467_1/soa_counter_17" BEL "ad9467_1/soa_counter_18" BEL
         "ad9467_1/soa_counter_19" BEL "ad9467_1/soa_counter_20" BEL
         "ad9467_1/soa_counter_21" BEL "ad9467_1/soa_counter_22" BEL
-        "ad9467_1/soa_counter_23" BEL "ad9467_1/soa_counter_24" BEL
-        "ad9467_1/soa_counter_25" BEL "ad9467_1/soa_counter_26" BEL
+        "ad9467_1/soa_counter_25" BEL "ad9467_1/soa_counter_23" BEL
+        "ad9467_1/soa_counter_24" BEL "ad9467_1/soa_counter_26" BEL
         "ad9467_1/soa_counter_27" BEL "ad9467_1/soa_counter_28" BEL
         "ad9467_1/soa_counter_29" BEL "ad9467_1/soa_counter_30" BEL
         "ad9467_1/soa_counter_31" BEL "ad9467_1/i_clk_gbuf" PIN
@@ -20323,7 +20326,8 @@ TIMEGRP adc_clk_in_p = BEL "ad9467_1/reg01_rd_current_reflength_0" BEL
         "ad9467_1/g_adc_if[7].i_data_ddr_pins<1>" PIN
         "ad9467_1/g_adc_if[7].i_data_ddr_pins<2>" BEL
         "ad9467_1/real_strobe_signal" BEL "ad9467_1/real_soa_signal" BEL
-        "ad9467_1/reg02_rd_work_status" BEL "ad9467_1/fifowr_en" BEL
+        "ad9467_1/wasfifoerror" BEL "ad9467_1/reg02_rd_work_status" BEL
+        "ad9467_1/fifowr_en" BEL "ad9467_1/reg06_rd_testbandwith_speed" BEL
         "ad9467_1/Mshreg_real_data_0" BEL "ad9467_1/real_data_0" BEL
         "ad9467_1/Mshreg_real_data_1" BEL "ad9467_1/real_data_1" BEL
         "ad9467_1/Mshreg_real_data_2" BEL "ad9467_1/real_data_2" BEL
@@ -20961,62 +20965,56 @@ TIMEGRP adc_clk_in_n = BEL "ad9467_1/reg01_rd_current_reflength_0" BEL
         "ad9467_1/reg04_soa_length_cur_29" BEL
         "ad9467_1/reg04_soa_length_cur_30" BEL
         "ad9467_1/reg04_soa_length_cur_31" BEL "ad9467_1/resetfifo" BEL
-        "ad9467_1/reg06_rd" BEL "ad9467_1/reg01_rd_0" BEL
-        "ad9467_1/reg01_rd_1" BEL "ad9467_1/reg01_rd_2" BEL
-        "ad9467_1/reg01_rd_3" BEL "ad9467_1/reg01_rd_4" BEL
-        "ad9467_1/reg01_rd_5" BEL "ad9467_1/reg01_rd_6" BEL
-        "ad9467_1/reg01_rd_7" BEL "ad9467_1/reg01_rd_8" BEL
-        "ad9467_1/reg01_rd_9" BEL "ad9467_1/reg01_rd_10" BEL
-        "ad9467_1/reg01_rd_11" BEL "ad9467_1/reg01_rd_12" BEL
-        "ad9467_1/reg01_rd_13" BEL "ad9467_1/reg01_rd_14" BEL
-        "ad9467_1/reg01_rd_15" BEL "ad9467_1/reg01_rd_16" BEL
-        "ad9467_1/reg01_rd_17" BEL "ad9467_1/reg01_rd_18" BEL
-        "ad9467_1/reg01_rd_19" BEL "ad9467_1/reg01_rd_20" BEL
-        "ad9467_1/reg01_rd_21" BEL "ad9467_1/reg01_rd_22" BEL
-        "ad9467_1/reg01_rd_23" BEL "ad9467_1/reg01_rd_24" BEL
-        "ad9467_1/reg01_rd_25" BEL "ad9467_1/reg01_rd_26" BEL
-        "ad9467_1/reg01_rd_27" BEL "ad9467_1/reg01_rd_28" BEL
-        "ad9467_1/reg01_rd_29" BEL "ad9467_1/reg01_rd_30" BEL
-        "ad9467_1/reg01_rd_31" BEL "ad9467_1/reg03_rd_0" BEL
-        "ad9467_1/reg03_rd_1" BEL "ad9467_1/reg03_rd_2" BEL
-        "ad9467_1/reg03_rd_3" BEL "ad9467_1/reg03_rd_4" BEL
-        "ad9467_1/reg03_rd_5" BEL "ad9467_1/reg03_rd_6" BEL
-        "ad9467_1/reg03_rd_7" BEL "ad9467_1/reg03_rd_8" BEL
-        "ad9467_1/reg03_rd_9" BEL "ad9467_1/reg03_rd_10" BEL
-        "ad9467_1/reg03_rd_11" BEL "ad9467_1/reg03_rd_12" BEL
-        "ad9467_1/reg03_rd_13" BEL "ad9467_1/reg03_rd_14" BEL
-        "ad9467_1/reg03_rd_15" BEL "ad9467_1/reg03_rd_16" BEL
-        "ad9467_1/reg03_rd_17" BEL "ad9467_1/reg03_rd_18" BEL
-        "ad9467_1/reg03_rd_19" BEL "ad9467_1/reg03_rd_20" BEL
-        "ad9467_1/reg03_rd_21" BEL "ad9467_1/reg03_rd_22" BEL
-        "ad9467_1/reg03_rd_23" BEL "ad9467_1/reg03_rd_24" BEL
-        "ad9467_1/reg03_rd_25" BEL "ad9467_1/reg03_rd_26" BEL
-        "ad9467_1/reg03_rd_27" BEL "ad9467_1/reg03_rd_28" BEL
-        "ad9467_1/reg03_rd_29" BEL "ad9467_1/reg03_rd_30" BEL
-        "ad9467_1/reg03_rd_31" BEL "ad9467_1/reg04_rd_0" BEL
-        "ad9467_1/reg04_rd_1" BEL "ad9467_1/reg04_rd_2" BEL
-        "ad9467_1/reg04_rd_3" BEL "ad9467_1/reg04_rd_4" BEL
-        "ad9467_1/reg04_rd_5" BEL "ad9467_1/reg04_rd_6" BEL
-        "ad9467_1/reg04_rd_7" BEL "ad9467_1/reg04_rd_8" BEL
-        "ad9467_1/reg04_rd_9" BEL "ad9467_1/reg04_rd_10" BEL
-        "ad9467_1/reg04_rd_11" BEL "ad9467_1/reg04_rd_12" BEL
-        "ad9467_1/reg04_rd_13" BEL "ad9467_1/reg04_rd_14" BEL
-        "ad9467_1/reg04_rd_15" BEL "ad9467_1/reg04_rd_16" BEL
-        "ad9467_1/reg04_rd_17" BEL "ad9467_1/reg04_rd_18" BEL
-        "ad9467_1/reg04_rd_19" BEL "ad9467_1/reg04_rd_20" BEL
-        "ad9467_1/reg04_rd_21" BEL "ad9467_1/reg04_rd_22" BEL
-        "ad9467_1/reg04_rd_23" BEL "ad9467_1/reg04_rd_24" BEL
-        "ad9467_1/reg04_rd_25" BEL "ad9467_1/reg04_rd_26" BEL
-        "ad9467_1/reg04_rd_27" BEL "ad9467_1/reg04_rd_28" BEL
-        "ad9467_1/reg04_rd_29" BEL "ad9467_1/reg04_rd_30" BEL
-        "ad9467_1/reg04_rd_31" BEL "ad9467_1/reg02_rd" BEL
-        "ad9467_1/reg05_rd_0" BEL "ad9467_1/reg05_rd_1" BEL
-        "ad9467_1/reg05_rd_2" BEL "ad9467_1/reg05_rd_3" BEL
-        "ad9467_1/reg05_rd_4" BEL "ad9467_1/reg05_rd_5" BEL
-        "ad9467_1/reg05_rd_6" BEL "ad9467_1/reg05_rd_7" BEL
-        "ad9467_1/reg05_rd_8" BEL "ad9467_1/reg05_rd_9" BEL
-        "ad9467_1/reg05_rd_10" BEL "ad9467_1/reg05_rd_11" BEL
-        "ad9467_1/reg09_rd_0" BEL "ad9467_1/reg09_rd_1" BEL
+        "ad9467_1/reg01_rd_0" BEL "ad9467_1/reg01_rd_1" BEL
+        "ad9467_1/reg01_rd_2" BEL "ad9467_1/reg01_rd_3" BEL
+        "ad9467_1/reg01_rd_4" BEL "ad9467_1/reg01_rd_5" BEL
+        "ad9467_1/reg01_rd_6" BEL "ad9467_1/reg01_rd_7" BEL
+        "ad9467_1/reg01_rd_8" BEL "ad9467_1/reg01_rd_9" BEL
+        "ad9467_1/reg01_rd_10" BEL "ad9467_1/reg01_rd_11" BEL
+        "ad9467_1/reg01_rd_12" BEL "ad9467_1/reg01_rd_13" BEL
+        "ad9467_1/reg01_rd_14" BEL "ad9467_1/reg01_rd_15" BEL
+        "ad9467_1/reg01_rd_16" BEL "ad9467_1/reg01_rd_17" BEL
+        "ad9467_1/reg01_rd_18" BEL "ad9467_1/reg01_rd_19" BEL
+        "ad9467_1/reg01_rd_20" BEL "ad9467_1/reg01_rd_21" BEL
+        "ad9467_1/reg01_rd_22" BEL "ad9467_1/reg01_rd_23" BEL
+        "ad9467_1/reg01_rd_24" BEL "ad9467_1/reg01_rd_25" BEL
+        "ad9467_1/reg01_rd_26" BEL "ad9467_1/reg01_rd_27" BEL
+        "ad9467_1/reg01_rd_28" BEL "ad9467_1/reg01_rd_29" BEL
+        "ad9467_1/reg01_rd_30" BEL "ad9467_1/reg01_rd_31" BEL
+        "ad9467_1/reg03_rd_0" BEL "ad9467_1/reg03_rd_1" BEL
+        "ad9467_1/reg03_rd_2" BEL "ad9467_1/reg03_rd_3" BEL
+        "ad9467_1/reg03_rd_4" BEL "ad9467_1/reg03_rd_5" BEL
+        "ad9467_1/reg03_rd_6" BEL "ad9467_1/reg03_rd_7" BEL
+        "ad9467_1/reg03_rd_8" BEL "ad9467_1/reg03_rd_9" BEL
+        "ad9467_1/reg03_rd_10" BEL "ad9467_1/reg03_rd_11" BEL
+        "ad9467_1/reg03_rd_12" BEL "ad9467_1/reg03_rd_13" BEL
+        "ad9467_1/reg03_rd_14" BEL "ad9467_1/reg03_rd_15" BEL
+        "ad9467_1/reg03_rd_16" BEL "ad9467_1/reg03_rd_17" BEL
+        "ad9467_1/reg03_rd_18" BEL "ad9467_1/reg03_rd_19" BEL
+        "ad9467_1/reg03_rd_20" BEL "ad9467_1/reg03_rd_21" BEL
+        "ad9467_1/reg03_rd_22" BEL "ad9467_1/reg03_rd_23" BEL
+        "ad9467_1/reg03_rd_24" BEL "ad9467_1/reg03_rd_25" BEL
+        "ad9467_1/reg03_rd_26" BEL "ad9467_1/reg03_rd_27" BEL
+        "ad9467_1/reg03_rd_28" BEL "ad9467_1/reg03_rd_29" BEL
+        "ad9467_1/reg03_rd_30" BEL "ad9467_1/reg03_rd_31" BEL
+        "ad9467_1/reg04_rd_0" BEL "ad9467_1/reg04_rd_1" BEL
+        "ad9467_1/reg04_rd_2" BEL "ad9467_1/reg04_rd_3" BEL
+        "ad9467_1/reg04_rd_4" BEL "ad9467_1/reg04_rd_5" BEL
+        "ad9467_1/reg04_rd_6" BEL "ad9467_1/reg04_rd_7" BEL
+        "ad9467_1/reg04_rd_8" BEL "ad9467_1/reg04_rd_9" BEL
+        "ad9467_1/reg04_rd_10" BEL "ad9467_1/reg04_rd_11" BEL
+        "ad9467_1/reg04_rd_12" BEL "ad9467_1/reg04_rd_13" BEL
+        "ad9467_1/reg04_rd_14" BEL "ad9467_1/reg04_rd_15" BEL
+        "ad9467_1/reg04_rd_16" BEL "ad9467_1/reg04_rd_17" BEL
+        "ad9467_1/reg04_rd_18" BEL "ad9467_1/reg04_rd_19" BEL
+        "ad9467_1/reg04_rd_20" BEL "ad9467_1/reg04_rd_21" BEL
+        "ad9467_1/reg04_rd_22" BEL "ad9467_1/reg04_rd_23" BEL
+        "ad9467_1/reg04_rd_24" BEL "ad9467_1/reg04_rd_25" BEL
+        "ad9467_1/reg04_rd_26" BEL "ad9467_1/reg04_rd_27" BEL
+        "ad9467_1/reg04_rd_28" BEL "ad9467_1/reg04_rd_29" BEL
+        "ad9467_1/reg04_rd_30" BEL "ad9467_1/reg04_rd_31" BEL
+        "ad9467_1/reg02_rd" BEL "ad9467_1/reg05_rd" BEL "ad9467_1/reg06_rd"
+        BEL "ad9467_1/reg09_rd_0" BEL "ad9467_1/reg09_rd_1" BEL
         "ad9467_1/reg09_rd_2" BEL "ad9467_1/reg09_rd_3" BEL
         "ad9467_1/reg09_rd_4" BEL "ad9467_1/reg09_rd_5" BEL
         "ad9467_1/reg09_rd_6" BEL "ad9467_1/reg09_rd_7" BEL
@@ -21026,34 +21024,34 @@ TIMEGRP adc_clk_in_n = BEL "ad9467_1/reg01_rd_current_reflength_0" BEL
         "ad9467_1/real_data_out_61" BEL "ad9467_1/real_data_out_60" BEL
         "ad9467_1/real_data_out_59" BEL "ad9467_1/real_data_out_58" BEL
         "ad9467_1/real_data_out_57" BEL "ad9467_1/real_data_out_56" BEL
-        "ad9467_1/real_data_out_55" BEL "ad9467_1/real_data_out_54" BEL
-        "ad9467_1/real_data_out_53" BEL "ad9467_1/real_data_out_50" BEL
-        "ad9467_1/real_data_out_52" BEL "ad9467_1/real_data_out_51" BEL
+        "ad9467_1/real_data_out_55" BEL "ad9467_1/real_data_out_52" BEL
+        "ad9467_1/real_data_out_54" BEL "ad9467_1/real_data_out_53" BEL
+        "ad9467_1/real_data_out_51" BEL "ad9467_1/real_data_out_50" BEL
         "ad9467_1/real_data_out_49" BEL "ad9467_1/real_data_out_48" BEL
         "ad9467_1/real_data_out_47" BEL "ad9467_1/real_data_out_46" BEL
-        "ad9467_1/real_data_out_45" BEL "ad9467_1/real_data_out_44" BEL
-        "ad9467_1/real_data_out_43" BEL "ad9467_1/real_data_out_42" BEL
+        "ad9467_1/real_data_out_43" BEL "ad9467_1/real_data_out_45" BEL
+        "ad9467_1/real_data_out_44" BEL "ad9467_1/real_data_out_42" BEL
         "ad9467_1/real_data_out_41" BEL "ad9467_1/real_data_out_40" BEL
         "ad9467_1/real_data_out_39" BEL "ad9467_1/real_data_out_38" BEL
-        "ad9467_1/real_data_out_37" BEL "ad9467_1/real_data_out_36" BEL
-        "ad9467_1/real_data_out_33" BEL "ad9467_1/real_data_out_35" BEL
-        "ad9467_1/real_data_out_34" BEL "ad9467_1/real_data_out_32" BEL
+        "ad9467_1/real_data_out_37" BEL "ad9467_1/real_data_out_34" BEL
+        "ad9467_1/real_data_out_36" BEL "ad9467_1/real_data_out_35" BEL
+        "ad9467_1/real_data_out_33" BEL "ad9467_1/real_data_out_32" BEL
         "ad9467_1/real_data_out_31" BEL "ad9467_1/real_data_out_30" BEL
         "ad9467_1/real_data_out_29" BEL "ad9467_1/real_data_out_28" BEL
         "ad9467_1/real_data_out_27" BEL "ad9467_1/real_data_out_26" BEL
         "ad9467_1/real_data_out_25" BEL "ad9467_1/real_data_out_24" BEL
         "ad9467_1/real_data_out_23" BEL "ad9467_1/real_data_out_22" BEL
         "ad9467_1/real_data_out_21" BEL "ad9467_1/real_data_out_20" BEL
-        "ad9467_1/real_data_out_19" BEL "ad9467_1/real_data_out_16" BEL
-        "ad9467_1/real_data_out_18" BEL "ad9467_1/real_data_out_17" BEL
+        "ad9467_1/real_data_out_17" BEL "ad9467_1/real_data_out_19" BEL
+        "ad9467_1/real_data_out_18" BEL "ad9467_1/real_data_out_16" BEL
         "ad9467_1/real_data_out_15" BEL "ad9467_1/real_data_out_14" BEL
         "ad9467_1/real_data_out_13" BEL "ad9467_1/real_data_out_12" BEL
         "ad9467_1/real_data_out_11" BEL "ad9467_1/real_data_out_10" BEL
         "ad9467_1/real_data_out_9" BEL "ad9467_1/real_data_out_8" BEL
         "ad9467_1/real_data_out_7" BEL "ad9467_1/real_data_out_6" BEL
         "ad9467_1/real_data_out_5" BEL "ad9467_1/real_data_out_4" BEL
-        "ad9467_1/real_data_out_3" BEL "ad9467_1/real_data_out_2" BEL
-        "ad9467_1/real_data_out_1" BEL "ad9467_1/real_data_out_0" BEL
+        "ad9467_1/real_data_out_3" BEL "ad9467_1/real_data_out_0" BEL
+        "ad9467_1/real_data_out_2" BEL "ad9467_1/real_data_out_1" BEL
         "ad9467_1/reg08_rd_0" BEL "ad9467_1/reg08_rd_1" BEL
         "ad9467_1/reg08_rd_2" BEL "ad9467_1/reg08_rd_3" BEL
         "ad9467_1/reg08_rd_4" BEL "ad9467_1/reg08_rd_5" BEL
@@ -21079,67 +21077,61 @@ TIMEGRP adc_clk_in_n = BEL "ad9467_1/reg01_rd_current_reflength_0" BEL
         "ad9467_1/reg07_rd_28" BEL "ad9467_1/reg07_rd_29" BEL
         "ad9467_1/reg07_rd_30" BEL "ad9467_1/reg07_rd_31" BEL
         "ad9467_1/count_0" BEL "ad9467_1/count_1" BEL
-        "ad9467_1/reflength_counter_0" BEL "ad9467_1/reflength_counter_1" BEL
-        "ad9467_1/reflength_counter_2" BEL "ad9467_1/reflength_counter_3" BEL
-        "ad9467_1/reflength_counter_6" BEL "ad9467_1/reflength_counter_4" BEL
-        "ad9467_1/reflength_counter_5" BEL "ad9467_1/reflength_counter_7" BEL
+        "ad9467_1/reflength_counter_0" BEL "ad9467_1/reflength_counter_3" BEL
+        "ad9467_1/reflength_counter_1" BEL "ad9467_1/reflength_counter_2" BEL
+        "ad9467_1/reflength_counter_4" BEL "ad9467_1/reflength_counter_5" BEL
+        "ad9467_1/reflength_counter_6" BEL "ad9467_1/reflength_counter_7" BEL
         "ad9467_1/reflength_counter_8" BEL "ad9467_1/reflength_counter_9" BEL
-        "ad9467_1/reflength_counter_10" BEL "ad9467_1/reflength_counter_11"
-        BEL "ad9467_1/reflength_counter_12" BEL
-        "ad9467_1/reflength_counter_15" BEL "ad9467_1/reflength_counter_13"
-        BEL "ad9467_1/reflength_counter_14" BEL
+        "ad9467_1/reflength_counter_12" BEL "ad9467_1/reflength_counter_10"
+        BEL "ad9467_1/reflength_counter_11" BEL
+        "ad9467_1/reflength_counter_13" BEL "ad9467_1/reflength_counter_14"
+        BEL "ad9467_1/reflength_counter_15" BEL
         "ad9467_1/reflength_counter_16" BEL "ad9467_1/reflength_counter_17"
         BEL "ad9467_1/reflength_counter_18" BEL
-        "ad9467_1/reflength_counter_19" BEL "ad9467_1/reflength_counter_20"
-        BEL "ad9467_1/reflength_counter_21" BEL
+        "ad9467_1/reflength_counter_21" BEL "ad9467_1/reflength_counter_19"
+        BEL "ad9467_1/reflength_counter_20" BEL
         "ad9467_1/reflength_counter_22" BEL "ad9467_1/reflength_counter_23"
         BEL "ad9467_1/reflength_counter_24" BEL
         "ad9467_1/reflength_counter_25" BEL "ad9467_1/reflength_counter_26"
         BEL "ad9467_1/reflength_counter_27" BEL
-        "ad9467_1/reflength_counter_28" BEL "ad9467_1/reflength_counter_29"
-        BEL "ad9467_1/reflength_counter_30" BEL
-        "ad9467_1/reflength_counter_31" BEL "ad9467_1/bram_addr_0" BEL
-        "ad9467_1/bram_addr_1" BEL "ad9467_1/bram_addr_2" BEL
-        "ad9467_1/bram_addr_3" BEL "ad9467_1/bram_addr_4" BEL
-        "ad9467_1/bram_addr_5" BEL "ad9467_1/bram_addr_6" BEL
-        "ad9467_1/bram_addr_7" BEL "ad9467_1/bram_addr_8" BEL
-        "ad9467_1/bram_addr_9" BEL "ad9467_1/bram_addr_10" BEL
-        "ad9467_1/bram_addr_11" BEL "ad9467_1/count_ref_0" BEL
+        "ad9467_1/reflength_counter_30" BEL "ad9467_1/reflength_counter_28"
+        BEL "ad9467_1/reflength_counter_29" BEL
+        "ad9467_1/reflength_counter_31" BEL "ad9467_1/count_ref_0" BEL
         "ad9467_1/count_ref_1" BEL "ad9467_1/count_ref_2" BEL
         "ad9467_1/count_ref_3" BEL "ad9467_1/count_ref_4" BEL
         "ad9467_1/count_ref_5" BEL "ad9467_1/count_ref_6" BEL
         "ad9467_1/count_ref_7" BEL "ad9467_1/count_ref_8" BEL
         "ad9467_1/count_ref_9" BEL "ad9467_1/count_ref_10" BEL
         "ad9467_1/count_ref_11" BEL "ad9467_1/strobe_counter_0" BEL
-        "ad9467_1/strobe_counter_1" BEL "ad9467_1/strobe_counter_2" BEL
-        "ad9467_1/strobe_counter_5" BEL "ad9467_1/strobe_counter_3" BEL
-        "ad9467_1/strobe_counter_4" BEL "ad9467_1/strobe_counter_6" BEL
+        "ad9467_1/strobe_counter_3" BEL "ad9467_1/strobe_counter_1" BEL
+        "ad9467_1/strobe_counter_2" BEL "ad9467_1/strobe_counter_4" BEL
+        "ad9467_1/strobe_counter_5" BEL "ad9467_1/strobe_counter_6" BEL
         "ad9467_1/strobe_counter_7" BEL "ad9467_1/strobe_counter_8" BEL
-        "ad9467_1/strobe_counter_9" BEL "ad9467_1/strobe_counter_10" BEL
-        "ad9467_1/strobe_counter_11" BEL "ad9467_1/strobe_counter_14" BEL
-        "ad9467_1/strobe_counter_12" BEL "ad9467_1/strobe_counter_13" BEL
+        "ad9467_1/strobe_counter_9" BEL "ad9467_1/strobe_counter_12" BEL
+        "ad9467_1/strobe_counter_10" BEL "ad9467_1/strobe_counter_11" BEL
+        "ad9467_1/strobe_counter_13" BEL "ad9467_1/strobe_counter_14" BEL
         "ad9467_1/strobe_counter_15" BEL "ad9467_1/strobe_counter_16" BEL
         "ad9467_1/strobe_counter_17" BEL "ad9467_1/strobe_counter_18" BEL
-        "ad9467_1/strobe_counter_19" BEL "ad9467_1/strobe_counter_20" BEL
-        "ad9467_1/strobe_counter_21" BEL "ad9467_1/strobe_counter_22" BEL
+        "ad9467_1/strobe_counter_21" BEL "ad9467_1/strobe_counter_19" BEL
+        "ad9467_1/strobe_counter_20" BEL "ad9467_1/strobe_counter_22" BEL
         "ad9467_1/strobe_counter_23" BEL "ad9467_1/strobe_counter_24" BEL
         "ad9467_1/strobe_counter_25" BEL "ad9467_1/strobe_counter_26" BEL
-        "ad9467_1/strobe_counter_27" BEL "ad9467_1/strobe_counter_28" BEL
-        "ad9467_1/strobe_counter_31" BEL "ad9467_1/strobe_counter_29" BEL
-        "ad9467_1/strobe_counter_30" BEL "ad9467_1/soa_counter_0" BEL
+        "ad9467_1/strobe_counter_27" BEL "ad9467_1/strobe_counter_30" BEL
+        "ad9467_1/strobe_counter_28" BEL "ad9467_1/strobe_counter_29" BEL
+        "ad9467_1/strobe_counter_31" BEL "ad9467_1/soa_counter_0" BEL
         "ad9467_1/soa_counter_1" BEL "ad9467_1/soa_counter_2" BEL
         "ad9467_1/soa_counter_3" BEL "ad9467_1/soa_counter_4" BEL
-        "ad9467_1/soa_counter_5" BEL "ad9467_1/soa_counter_8" BEL
-        "ad9467_1/soa_counter_6" BEL "ad9467_1/soa_counter_7" BEL
+        "ad9467_1/soa_counter_7" BEL "ad9467_1/soa_counter_5" BEL
+        "ad9467_1/soa_counter_6" BEL "ad9467_1/soa_counter_8" BEL
         "ad9467_1/soa_counter_9" BEL "ad9467_1/soa_counter_10" BEL
         "ad9467_1/soa_counter_11" BEL "ad9467_1/soa_counter_12" BEL
-        "ad9467_1/soa_counter_13" BEL "ad9467_1/soa_counter_14" BEL
-        "ad9467_1/soa_counter_17" BEL "ad9467_1/soa_counter_15" BEL
-        "ad9467_1/soa_counter_16" BEL "ad9467_1/soa_counter_18" BEL
+        "ad9467_1/soa_counter_13" BEL "ad9467_1/soa_counter_16" BEL
+        "ad9467_1/soa_counter_14" BEL "ad9467_1/soa_counter_15" BEL
+        "ad9467_1/soa_counter_17" BEL "ad9467_1/soa_counter_18" BEL
         "ad9467_1/soa_counter_19" BEL "ad9467_1/soa_counter_20" BEL
         "ad9467_1/soa_counter_21" BEL "ad9467_1/soa_counter_22" BEL
-        "ad9467_1/soa_counter_23" BEL "ad9467_1/soa_counter_24" BEL
-        "ad9467_1/soa_counter_25" BEL "ad9467_1/soa_counter_26" BEL
+        "ad9467_1/soa_counter_25" BEL "ad9467_1/soa_counter_23" BEL
+        "ad9467_1/soa_counter_24" BEL "ad9467_1/soa_counter_26" BEL
         "ad9467_1/soa_counter_27" BEL "ad9467_1/soa_counter_28" BEL
         "ad9467_1/soa_counter_29" BEL "ad9467_1/soa_counter_30" BEL
         "ad9467_1/soa_counter_31" BEL "ad9467_1/i_clk_gbuf" PIN
@@ -21176,7 +21168,8 @@ TIMEGRP adc_clk_in_n = BEL "ad9467_1/reg01_rd_current_reflength_0" BEL
         "ad9467_1/g_adc_if[7].i_data_ddr_pins<1>" PIN
         "ad9467_1/g_adc_if[7].i_data_ddr_pins<2>" BEL
         "ad9467_1/real_strobe_signal" BEL "ad9467_1/real_soa_signal" BEL
-        "ad9467_1/reg02_rd_work_status" BEL "ad9467_1/fifowr_en" BEL
+        "ad9467_1/wasfifoerror" BEL "ad9467_1/reg02_rd_work_status" BEL
+        "ad9467_1/fifowr_en" BEL "ad9467_1/reg06_rd_testbandwith_speed" BEL
         "ad9467_1/Mshreg_real_data_0" BEL "ad9467_1/real_data_0" BEL
         "ad9467_1/Mshreg_real_data_1" BEL "ad9467_1/real_data_1" BEL
         "ad9467_1/Mshreg_real_data_2" BEL "ad9467_1/real_data_2" BEL

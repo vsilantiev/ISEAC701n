@@ -172,10 +172,15 @@ parameter WIDTH=16;
 	 reg reg04_rv;
 	 
 	 // принудительная очистка FIFO
+	 // возвращает была ли вообще ошибка в fifo или нет
 	 reg [31:0] reg05_rd;
 	 reg reg05_rv;
+	 
+	 // каждый такт идет закачка данных с АЦП (для 4х канального не нужна)
+	 reg reg06_rd_testbandwith_speed;
 	 reg [31:0] reg06_rd;
 	 reg reg06_rv;
+	 
 	 reg [31:0] reg07_rd;
 	 reg reg07_rv;
 	 reg [31:0] reg08_rd;
@@ -292,6 +297,8 @@ parameter WIDTH=16;
 	reg real_soa_signal;	
 	reg resetfifo;
 	
+	reg wasfifoerror;
+	
 //
 /*Gluing data ADC*/
 //
@@ -356,6 +363,7 @@ always @ (posedge clk)
 		reg03_strobe_length_cur <= 'd630;	// 7500 ns
 		reg04_soa_length_cur <= 'd8;	// 80 ns
 		
+		reg06_rd_testbandwith_speed<=0;
     end 
 	 else
 
@@ -434,15 +442,32 @@ always @ (posedge clk)
 		if (reg05_tv == 1)
 		begin
 			resetfifo <=  1;
+			
 		end
 		else
 		begin
 			resetfifo <=  0;
 		end
-      reg05_rd <= bram_addr;  //48
+      reg05_rd <= wasfifoerror;  //48
 	   reg05_rv <= 1;//1;
-		reg06_rd <= fifofull; //49
-	   reg06_rv <= 1;
+		
+		
+		if ( reg06_tv == 1)
+	 begin
+	   if (reg06_td > 'd0)
+		 
+			reg06_rd_testbandwith_speed <=1;
+		 else
+			reg06_rd_testbandwith_speed <= 0;
+		
+	 end 
+		
+		reg06_rd <= reg06_rd_testbandwith_speed; // state IRQ to reg 
+	   reg06_rv <= 1; //49
+		
+		
+		
+		
 		reg07_rd <= real_data_out; //50
 	   reg07_rv <= 1;		
 		reg08_rd <= real_data; //51
@@ -451,7 +476,7 @@ always @ (posedge clk)
 	   reg09_rv <= 1;//1;
 		reg10_rd <= count_irq; //53
 	   reg10_rv <= 1;
-		reg11_rd <= 'd1000;
+		reg11_rd <= 0;
 	   reg11_rv <= 1;		
 		reg12_rd <= 'd1000;
 	   reg12_rv <= 1;
@@ -474,9 +499,12 @@ always @ (posedge clk)
 		
 		real_strobe_signal <= 0;
 	   real_soa_signal <= 0;
+		wasfifoerror <= 0;
 		
 		
-    end else begin
+    end else 
+	 
+	 begin
 	    
 		if ( reg02_rd_work_status == 0 )
 			begin
@@ -501,7 +529,14 @@ always @ (posedge clk)
 				soa_counter <=0; 
 				real_strobe_signal <= 1;
 				real_soa_signal <= 1;
-			
+				fifowr_en <= 0;
+			//	if ( fifofull == 1)
+			//	begin
+			//		resetfifo <= 1;
+			//	end
+				
+				
+				
 			end
 			else
 			begin
@@ -527,38 +562,50 @@ always @ (posedge clk)
 						real_soa_signal <= 0; 
 				end
 				
+				
+				
+					case (count)
+				  0: 
+					begin
+						 real_data_out[63:48] <= real_data[15:0];
+					 	fifowr_en <= 0;				
+					end
+				  1:
+						begin
+					 	real_data_out[15:0] <= real_data[15:0];	
+						 fifowr_en <= 0;
+						 end
+				  2: 
+						begin
+					 	real_data_out[31:16] <= real_data[15:0];
+						 fifowr_en <= 0;
+						 end
+				  3: begin
+						 real_data_out[47:32] <= real_data[15:0]; 
+						 bram_addr <= bram_addr + 1;
+						 count_ref <= count_ref + 1;
+						
+						 fifowr_en<= ~fifofull;
+						 if (fifofull == 1)
+						 begin
+						  wasfifoerror <= 1;
+						 end
+							
+							
+							
+					  end
+					endcase
+				
 			end
 			
 			
-			case (count)
-			  0: 
-				begin
-					real_data_out[15:0] <= real_data[15:0];	
-					fifowr_en <= 0;				
-				end
-			  1:
-					begin
-					real_data_out[31:16] <= real_data[15:0];
-					 fifowr_en <= 0;
-					 end
-			  2: 
-					begin
-					real_data_out[47:32] <= real_data[15:0]; 
-					 fifowr_en <= 0;
-					 end
-			  3: begin
-					 real_data_out[63:48] <= real_data[15:0];
-					 bram_addr <= bram_addr + 1;
-					 count_ref <= count_ref + 1;
-					
-					 fifowr_en<= ~fifofull;
-						
-						
-						
-				  end
-				endcase
 			
 			
+		if (reg06_rd_testbandwith_speed==1)
+		begin
+		  fifowr_en<=1;
+			
+		end
 				
 			
 		end
