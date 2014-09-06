@@ -1,7 +1,7 @@
 ##############################################################
 #
 # Xilinx Core Generator version 14.5
-# Date: Thu Sep 04 12:38:42 2014
+# Date: Fri Sep 05 17:28:49 2014
 #
 ##############################################################
 #
@@ -58,8 +58,8 @@ CSET bar1_type=Memory
 CSET bar2_64bit=false
 CSET bar2_enabled=true
 CSET bar2_prefetchable=false
-CSET bar2_scale=Megabytes
-CSET bar2_size=1
+CSET bar2_scale=Kilobytes
+CSET bar2_size=512
 CSET bar2_type=Memory
 CSET bar3_64bit=false
 CSET bar3_enabled=false
@@ -113,7 +113,7 @@ CSET d3_power_dissipated_factor=0
 CSET d3cold_pme_support=false
 CSET d3hot_pme_support=true
 CSET de_emph=0
-CSET device_id=6014
+CSET device_id=6024
 CSET device_port_type=PCI_Express_Endpoint_device
 CSET device_specific_initialization=false
 CSET disable_tx_aspm_l0s=false
@@ -146,7 +146,7 @@ CSET hw_auton_spd_disable=false
 CSET intx_generation=true
 CSET io_base_limit_registers=Disabled
 CSET legacy_interrupt=INTA
-CSET link_speed=2.5_GT/s
+CSET link_speed=5.0_GT/s
 CSET max_payload_size=512_bytes
 CSET maximum_link_width=X4
 CSET msi_64b=true
@@ -191,10 +191,10 @@ CSET sub_class_interface_menu=Generic_XT_compatible_serial_controller
 CSET subsystem_id=ABB3
 CSET subsystem_vendor_id=0084
 CSET trans_buf_pipeline=None
-CSET trgt_link_speed=4'h1
+CSET trgt_link_speed=4'h2
 CSET trim_tlp_digest=true
 CSET upconfigure_capable=true
-CSET user_clk_freq=125_default
+CSET user_clk_freq=250_default
 CSET vc_cap_enabled=false
 CSET vc_cap_reject_snoop=false
 CSET vendor_id=10EE
@@ -205,4 +205,4 @@ CSET xlnx_ref_board=ML_605
 MISC pkg_timestamp=2013-03-27T03:45:13Z
 # END Extra information
 GENERATE
-# CRC: 1eadc9dc
+# CRC: d5202b4b

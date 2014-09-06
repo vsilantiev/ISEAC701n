@@ -155,6 +155,10 @@ parameter WIDTH=16;
 	 reg [31:0] reg01_rd;
 	 reg reg01_rv;
 	 
+	 // --- регистры на случай перезаполнения тракта (ждем один такт!)
+	 reg [31:0] fifowasoverflowonvalue;
+	 reg fifowasoverflow;
+	 
 	 // если workstatus = 1 тогда запускаем заполнение FIFO, иначе останавливаем и очищаем все
 	 reg reg02_rd_work_status;
 	
@@ -297,7 +301,9 @@ parameter WIDTH=16;
 	reg real_soa_signal;	
 	reg resetfifo;
 	
-	reg wasfifoerror;
+	reg[31:0] wasfifoerror;
+	
+	
 	
 //
 /*Gluing data ADC*/
@@ -364,6 +370,8 @@ always @ (posedge clk)
 		reg04_soa_length_cur <= 'd8;	// 80 ns
 		
 		reg06_rd_testbandwith_speed<=0;
+		
+		
     end 
 	 else
 
@@ -499,9 +507,13 @@ always @ (posedge clk)
 		
 		real_strobe_signal <= 0;
 	   real_soa_signal <= 0;
-		wasfifoerror <= 0;
+		wasfifoerror <= 'd0;
 		
 		
+		fifowasoverflowonvalue <= 'd0;
+		fifowasoverflow <=0;
+	 
+	 
     end else 
 	 
 	 begin
@@ -515,12 +527,15 @@ always @ (posedge clk)
 				
 				real_strobe_signal <= 0;
 				real_soa_signal <= 0;
+				
+				
+				fifowasoverflowonvalue <= 'd0;
+				fifowasoverflow <=0;
 		
 			end
 		else
 	 
 		begin 
-			count <= count + 1;  
 			
 			if (reflength_counter == reg01_rd_current_reflength  )
 			begin
@@ -530,6 +545,7 @@ always @ (posedge clk)
 				real_strobe_signal <= 1;
 				real_soa_signal <= 1;
 				fifowr_en <= 0;
+				count<=0;
 			//	if ( fifofull == 1)
 			//	begin
 			//		resetfifo <= 1;
@@ -540,7 +556,7 @@ always @ (posedge clk)
 			end
 			else
 			begin
-				reflength_counter <= reflength_counter +1;
+			
 				if ( strobe_counter <= reg03_strobe_length_cur )
 				begin
 						strobe_counter <= strobe_counter + 1;
@@ -561,6 +577,7 @@ always @ (posedge clk)
 				begin
 						real_soa_signal <= 0; 
 				end
+				
 				
 				
 				
@@ -585,16 +602,50 @@ always @ (posedge clk)
 						 bram_addr <= bram_addr + 1;
 						 count_ref <= count_ref + 1;
 						
-						 fifowr_en<= ~fifofull;
 						 if (fifofull == 1)
 						 begin
-						  wasfifoerror <= 1;
+						   fifowr_en <= 0;
+							if (fifowasoverflow == 0)
+							begin
+								fifowasoverflow <= 1;
+								fifowasoverflowonvalue<=reflength_counter;
+							end
+							
+						 end
+						 else
+						 begin
+							if (fifowasoverflow==0)
+							begin
+								fifowr_en <= 1;
+							end
+							else
+							begin
+								if (fifowasoverflowonvalue == reflength_counter)
+								begin
+								   fifowr_en <= 1;
+									fifowasoverflow <= 0;
+									fifowasoverflowonvalue<='d0;
+								end
+								else
+								begin
+									fifowr_en <= 0;
+								end
+							end
+						 end
+						 
+						 if (fifofull == 1)
+						 begin
+						  wasfifoerror <= wasfifoerror + 1;
 						 end
 							
 							
 							
 					  end
 					endcase
+					
+					
+					reflength_counter <= reflength_counter +1;
+					count <= count + 1;  
 				
 			end
 			

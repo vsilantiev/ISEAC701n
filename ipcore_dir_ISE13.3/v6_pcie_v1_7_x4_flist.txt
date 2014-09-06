@@ -16,7 +16,7 @@ v6_pcie_v1_7_x4\example_design\PIO_TX_ENGINE.vhd
 v6_pcie_v1_7_x4\example_design\pci_exp_4_lane_64b_ep.v
 v6_pcie_v1_7_x4\example_design\pcie_app_v6.vhd
 v6_pcie_v1_7_x4\example_design\xilinx_pcie_2_0_ep_v6.vhd
-v6_pcie_v1_7_x4\example_design\xilinx_pcie_2_0_ep_v6_04_lane_gen1_xc6vlx240t-ff1156-1_ML605.ucf
+v6_pcie_v1_7_x4\example_design\xilinx_pcie_2_0_ep_v6_04_lane_gen2_xc6vlx240t-ff1156-1_ML605.ucf
 v6_pcie_v1_7_x4\implement\implement.bat
 v6_pcie_v1_7_x4\implement\implement.sh
 v6_pcie_v1_7_x4\implement\xilinx_pcie_2_0_ep_v6.cmd

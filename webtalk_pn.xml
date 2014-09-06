@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Fri Sep 05 20:56:40 2014">
+<application name="pn" timeStamp="Sat Sep 06 12:43:30 2014">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="2F64AA255D4543289C50EFE80FFB0AA4" type="project"/>
-<property name="ProjectIteration" value="2" type="project"/>
+<property name="ProjectIteration" value="4" type="project"/>
 <property name="ProjectFile" value="C:/work/xilinx/ml605/v6pcie.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2012-03-26T13:51:49" type="project"/>
 </section>
@@ -26,7 +26,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2012-03-26T13:51:49" type="design"/>
 <property name="PROP_intWbtProjectID" value="2F64AA255D4543289C50EFE80FFB0AA4" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="2" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="4" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_selectedSimRootSourceNode_behav" value="work.tf64_pcie_trn" type="process"/>
@@ -48,8 +48,8 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="FILE_COREGEN" value="6" type="source"/>
 <property name="FILE_NGC" value="2" type="source"/>
 <property name="FILE_UCF" value="1" type="source"/>
-<property name="FILE_VERILOG" value="21" type="source"/>
-<property name="FILE_VHDL" value="26" type="source"/>
+<property name="FILE_VERILOG" value="10" type="source"/>
+<property name="FILE_VHDL" value="41" type="source"/>
 </section>
 </application>
 </document>

@@ -23,7 +23,7 @@ rm -rf *.mgo xlnx_auto_0_xdb xlnx_auto_0.ise netlist.lst smart
 cd results
 
 echo 'Running ngdbuild'
-ngdbuild -verbose -uc ../../example_design/xilinx_pcie_2_0_ep_v6_04_lane_gen1_xc6vlx240t-ff1156-1_ML605.ucf xilinx_pcie_2_0_ep_v6.ngc -sd .
+ngdbuild -verbose -uc ../../example_design/xilinx_pcie_2_0_ep_v6_04_lane_gen2_xc6vlx240t-ff1156-1_ML605.ucf xilinx_pcie_2_0_ep_v6.ngc -sd .
 
 
 echo 'Running map'

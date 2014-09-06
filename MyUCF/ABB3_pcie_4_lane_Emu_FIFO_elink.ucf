@@ -124,14 +124,32 @@ INST "make4Lanes.pcieCore/pcie_clocking_i/mmcm_adv_i" LOC = MMCM_ADV_X0Y7;
 
 NET "sys_clk_c" TNM_NET = "SYSCLK" ;
 NET "make4Lanes.pcieCore/pcie_clocking_i/clk_125" TNM_NET = "CLK_125" ;
+NET "make4Lanes.pcieCore/TxOutClk_bufg" TNM_NET = "TXOUTCLKBUFG";
+NET "make4Lanes.pcieCore/pcie_clocking_i/clk_250" TNM_NET = "CLK_250" ;
 
-TIMESPEC "TS_SYSCLK"  = PERIOD "SYSCLK" 100 MHz HIGH 50 % PRIORITY 100 ;
-TIMESPEC "TS_CLK_125"  = PERIOD "CLK_125" TS_SYSCLK*1.25 HIGH 50 % PRIORITY 1 ;
+
+TIMESPEC "TS_SYSCLK"  = PERIOD "SYSCLK" 100 MHz HIGH 50 % ;
+TIMESPEC "TS_CLK_125"  = PERIOD "CLK_125" TS_SYSCLK*1.25 HIGH 50 % PRIORITY 100 ;
+TIMESPEC "TS_TXOUTCLKBUFG"  = PERIOD "TXOUTCLKBUFG" 100 MHz HIGH 50 % PRIORITY 100 ;
+TIMESPEC "TS_CLK_250" = PERIOD "CLK_250" TS_SYSCLK*2.5 HIGH 50 % PRIORITY 1;
 
 
+#PIN "make4Lanes.pcieCore/trn_reset_n_int_i.CLR" TIG ;
+#PIN "make4Lanes.pcieCore/trn_reset_n_i.CLR" TIG ;
+#PIN "make4Lanes.pcieCore/pcie_clocking_i/mmcm_adv_i.RST" TIG ;
+
+############dffd
+
+NET "make4Lanes.pcieCore/pcie_clocking_i/sel_lnk_rate_d" TIG ;
 PIN "make4Lanes.pcieCore/trn_reset_n_int_i.CLR" TIG ;
 PIN "make4Lanes.pcieCore/trn_reset_n_i.CLR" TIG ;
 PIN "make4Lanes.pcieCore/pcie_clocking_i/mmcm_adv_i.RST" TIG ;
+
+TIMESPEC "TS_RESETN" = FROM FFS(*) TO FFS(trn_reset_n_i) 8 ns;
+
+
+############
+
 
 
 ###############################################################################

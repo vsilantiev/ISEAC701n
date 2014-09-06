@@ -88,7 +88,7 @@ constant PCI_EXP_MSG_DATA              : std_logic_vector(6 downto 3) := "1110";
 
 constant COMPLETER_ID_CFG              : std_logic_vector(15 downto 0) := X"01A0";
 
-constant DEV_ID                        : std_logic_vector(15 downto 0) := X"6014";
+constant DEV_ID                        : std_logic_vector(15 downto 0) := X"6024";
 constant VEN_ID                        : std_logic_vector(15 downto 0) := X"10EE";
 constant DEV_VEN_ID                    : std_logic_vector(31 downto 0) := (DEV_ID & VEN_ID);
 
@@ -2745,7 +2745,7 @@ begin
 -- TRN MODEL Initialization
   BAR_RANGE(0) := X"FFFF0000";
   BAR_RANGE(1) := X"FFF00000";
-  BAR_RANGE(2) := X"FFF00000";
+  BAR_RANGE(2) := X"FFF80000";
   BAR_RANGE(3) := X"00000000";
   BAR_RANGE(4) := X"00000000";
   BAR_RANGE(5) := X"00000000";

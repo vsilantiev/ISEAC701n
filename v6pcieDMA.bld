@@ -29,12 +29,12 @@ WARNING:ConstraintSystem - Constraint <NET
    does not support attribute dependent distribution.
 
 INFO:ConstraintSystem - The Period constraint <NET "userclk_66MHz" PERIOD = 66.6
-   MHz HIGH 50%;> [MyUCF/ABB3_pcie_4_lane_Emu_FIFO_elink.ucf(165)], is specified
+   MHz HIGH 50%;> [MyUCF/ABB3_pcie_4_lane_Emu_FIFO_elink.ucf(183)], is specified
    using the Net Period method which is not recommended. Please use the Timespec
    PERIOD method.
 
 INFO:ConstraintSystem - The Period constraint <NET "userclk_200MHz_p" PERIOD =
-   200 MHz HIGH 50%;> [MyUCF/ABB3_pcie_4_lane_Emu_FIFO_elink.ucf(170)], is
+   200 MHz HIGH 50%;> [MyUCF/ABB3_pcie_4_lane_Emu_FIFO_elink.ucf(188)], is
    specified using the Net Period method which is not recommended. Please use
    the Timespec PERIOD method.
 
@@ -374,6 +374,70 @@ WARNING:NgdBuild:452 - logical net 'reg14_td<3>' has no driver
 WARNING:NgdBuild:452 - logical net 'reg14_td<2>' has no driver
 WARNING:NgdBuild:452 - logical net 'reg14_td<1>' has no driver
 WARNING:NgdBuild:452 - logical net 'reg14_td<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<63>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<62>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<61>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<60>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<59>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<58>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<57>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<56>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<55>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<54>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<53>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<52>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<51>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<50>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<49>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<48>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<47>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<46>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<45>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<44>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<43>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<42>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<41>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<40>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<39>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<38>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<37>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<36>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<35>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<34>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<33>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<32>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<31>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<30>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<29>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<28>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<27>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<26>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<25>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<24>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<23>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<22>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<21>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<20>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<19>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<18>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<17>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<16>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<15>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<14>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<13>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<12>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_din<0>' has no driver
 WARNING:NgdBuild:452 - logical net 'DDR_wr_Mask<1>' has no driver
 WARNING:NgdBuild:452 - logical net 'DDR_wr_Mask<0>' has no driver
 WARNING:NgdBuild:452 - logical net 'DDR_wr_din<63>' has no driver
@@ -448,6 +512,7 @@ WARNING:NgdBuild:452 - logical net 'reg11_tv' has no driver
 WARNING:NgdBuild:452 - logical net 'reg12_tv' has no driver
 WARNING:NgdBuild:452 - logical net 'reg13_tv' has no driver
 WARNING:NgdBuild:452 - logical net 'reg14_tv' has no driver
+WARNING:NgdBuild:452 - logical net 'eb_we' has no driver
 WARNING:NgdBuild:452 - logical net 'DDR_wr_sof' has no driver
 WARNING:NgdBuild:452 - logical net 'DDR_wr_eof' has no driver
 WARNING:NgdBuild:452 - logical net 'DDR_wr_v' has no driver
@@ -2071,12 +2136,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings: 1284
+  Number of warnings: 1349
 
-Total memory usage is 339632 kilobytes
+Total memory usage is 330672 kilobytes
 
 Writing NGD file "v6pcieDMA.ngd" ...
-Total REAL time to NGDBUILD completion:  45 sec
-Total CPU time to NGDBUILD completion:   43 sec
+Total REAL time to NGDBUILD completion:  41 sec
+Total CPU time to NGDBUILD completion:   39 sec
 
 Writing NGDBUILD log file "v6pcieDMA.bld"...

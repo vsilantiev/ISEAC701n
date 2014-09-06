@@ -167,24 +167,7 @@ begin
 
 
 ----- Host2Board FIFO ----------
-  U0_H2B:
-  v6_eb_fifo_counted_resized
-    port map (
-         wr_clk         => H2B_wr_clk      			,
-         wr_en          => H2B_wr_en       			,
-         din            => resized_H2B_wr_din 		,	
-         prog_full      => H2B_wr_pfull    			,
-         full           => H2B_wr_full     			,
-         rd_clk         => H2B_rd_clk              ,
-         rd_en          => H2B_rd_en               ,
-         dout           => resized_H2B_rd_dout     ,
-         prog_empty     => H2B_rd_pempty           ,
-         empty          => H2B_rd_empty            ,
-         rd_data_count  => H2B_rd_data_count_wire  ,
-         wr_data_count  => H2B_wr_data_count_wire  ,
-			valid          => H2B_rd_valid   		   ,
-         rst        		=> rst      
-         );
+ 
 
 
 ----- Board2Host FIFO ----------

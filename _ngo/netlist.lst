@@ -1,9 +1,9 @@
-C:\work\xilinx\ml605\v6pcieDMA.ngc 1409936415
+C:\work\xilinx\ml605\v6pcieDMA.ngc 1409992587
 ipcore_dir_ISE13.3/v6_mBuf_128x72.ngc 1409396765
 ipcore_dir_ISE13.3/v6_sfifo_15x128.ngc 1409396765
 MyUserLogic/UserLogic_00/user_logic_cw.ngc 1409396764
 MyUserLogic/UserLogic_00/inout_logic_cw.ngc 1409396764
 ipcore_dir/fifomodule.ngc 1409734688
 ipcore_dir/v6_prime_fifo_plain.ngc 1409396765
-ipcore_dir_ISE13.3/v6_eb_fifo_counted_resized.ngc 1409396765
+ipcore_dir_ISE13.3/v6_eb_fifo_counted_resized.ngc 1409984438
 OK

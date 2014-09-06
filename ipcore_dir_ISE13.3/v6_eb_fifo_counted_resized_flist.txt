@@ -5,6 +5,7 @@ fifo_generator_v8_3_readme.txt
 v6_eb_fifo_counted_resized.asy
 v6_eb_fifo_counted_resized.gise
 v6_eb_fifo_counted_resized.ngc
+v6_eb_fifo_counted_resized.sym
 v6_eb_fifo_counted_resized.vhd
 v6_eb_fifo_counted_resized.vho
 v6_eb_fifo_counted_resized.xco

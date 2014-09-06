@@ -51,6 +51,10 @@ utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path v6_eb_fifo_c
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type ngc
 incr fcount
 
+utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path v6_eb_fifo_counted_resized.sym
+utilities_xmdf::xmdfSetData $instance FileSet $fcount type symbol
+incr fcount
+
 utilities_xmdf::xmdfSetData $instance FileSet $fcount relative_path v6_eb_fifo_counted_resized.vhd
 utilities_xmdf::xmdfSetData $instance FileSet $fcount type vhdl
 incr fcount

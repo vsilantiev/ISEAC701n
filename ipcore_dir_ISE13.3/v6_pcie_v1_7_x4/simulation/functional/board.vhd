@@ -214,18 +214,18 @@ generic map (
       REF_CLK_FREQ => REF_CLK_FREQ,
       ALLOW_X8_GEN2 => FALSE,
       PL_FAST_TRAIN => TRUE,
-      LINK_CAP_MAX_LINK_SPEED => X"1",
-      DEVICE_ID => X"6014",
+      LINK_CAP_MAX_LINK_SPEED => X"2",
+      DEVICE_ID => X"6024",
       LINK_CAP_MAX_LINK_WIDTH => X"04",
       LINK_CAP_MAX_LINK_WIDTH_int => 4,
-      LINK_CTRL2_TARGET_LINK_SPEED => X"1",
+      LINK_CTRL2_TARGET_LINK_SPEED => X"2",
       LTSSM_MAX_LINK_WIDTH => X"04",
       DEV_CAP_MAX_PAYLOAD_SUPPORTED => 2,
       VC0_TX_LASTPACKET => 29,
       VC0_RX_RAM_LIMIT => X"7FF",
       VC0_TOTAL_CREDITS_PD => (308),
       VC0_TOTAL_CREDITS_CD => (308),
-      USER_CLK_FREQ => 2
+      USER_CLK_FREQ => 3
 )
 port map (
 

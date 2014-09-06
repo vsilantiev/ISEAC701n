@@ -69,7 +69,7 @@ entity v6_pcie_v1_7_x4 is
    ALLOW_X8_GEN2                                : boolean := FALSE;
    BAR0                                         : bit_vector := X"FFFF0000";
    BAR1                                         : bit_vector := X"FFF00000";
-   BAR2                                         : bit_vector := X"FFF00000";
+   BAR2                                         : bit_vector := X"FFF80000";
    BAR3                                         : bit_vector := X"00000000";
    BAR4                                         : bit_vector := X"00000000";
    BAR5                                         : bit_vector := X"00000000";
@@ -85,7 +85,7 @@ entity v6_pcie_v1_7_x4 is
    DEV_CAP_EXT_TAG_SUPPORTED                    : boolean    := FALSE;
    DEV_CAP_MAX_PAYLOAD_SUPPORTED                : integer    := 2;
    DEV_CAP_PHANTOM_FUNCTIONS_SUPPORT            : integer    := 0;
-   DEVICE_ID                                    : bit_vector := X"6014";
+   DEVICE_ID                                    : bit_vector := X"6024";
 
    DISABLE_LANE_REVERSAL                        : boolean    := TRUE;
    DISABLE_SCRAMBLING                           : boolean    := FALSE;
@@ -103,14 +103,14 @@ entity v6_pcie_v1_7_x4 is
 
    LINK_CAP_DLL_LINK_ACTIVE_REPORTING_CAP       : boolean    := FALSE;
    LINK_CAP_LINK_BANDWIDTH_NOTIFICATION_CAP     : boolean    := FALSE;
-   LINK_CAP_MAX_LINK_SPEED                      : bit_vector := X"1";
+   LINK_CAP_MAX_LINK_SPEED                      : bit_vector := X"2";
    LINK_CAP_MAX_LINK_WIDTH                      : bit_vector := X"04";
    LINK_CAP_MAX_LINK_WIDTH_int                  : integer    := 4;
    LINK_CAP_SURPRISE_DOWN_ERROR_CAPABLE         : boolean    := FALSE;
 
    LINK_CTRL2_DEEMPHASIS                        : boolean    := FALSE;
    LINK_CTRL2_HW_AUTONOMOUS_SPEED_DISABLE       : boolean    := FALSE;
-   LINK_CTRL2_TARGET_LINK_SPEED                 : bit_vector := X"0";
+   LINK_CTRL2_TARGET_LINK_SPEED                 : bit_vector := X"2";
    LINK_STATUS_SLOT_CLOCK_CONFIG                : boolean    := FALSE;
 
    LL_ACK_TIMEOUT                               : bit_vector := X"0000";
@@ -178,7 +178,7 @@ entity v6_pcie_v1_7_x4 is
    TL_TX_RAM_WRITE_LATENCY                      : integer    := 0;
 
    UPCONFIG_CAPABLE                             : boolean    := TRUE;
-   USER_CLK_FREQ                                : integer    := 2;
+   USER_CLK_FREQ                                : integer    := 3;
    VC_BASE_PTR                                  : bit_vector := X"0";
    VC_CAP_NEXTPTR                               : bit_vector := X"000";
    VC_CAP_ON                                    : boolean    := FALSE;
@@ -479,7 +479,7 @@ architecture v6_pcie of v6_pcie_v1_7_x4 is
 
    attribute CORE_GENERATION_INFO : string;
    attribute CORE_GENERATION_INFO of v6_pcie : ARCHITECTURE is 
-	"v6_pcie_v1_7_x4,v6_pcie_v1_7,{LINK_CAP_MAX_LINK_SPEED=1,LINK_CAP_MAX_LINK_WIDTH=04,PCIE_CAP_DEVICE_PORT_TYPE=0000,DEV_CAP_MAX_PAYLOAD_SUPPORTED=2,USER_CLK_FREQ=2,REF_CLK_FREQ=0,MSI_CAP_ON=TRUE,MSI_CAP_MULTIMSGCAP=0,MSI_CAP_MULTIMSG_EXTENSION=0,MSIX_CAP_ON=FALSE,TL_TX_RAM_RADDR_LATENCY=0,TL_TX_RAM_RDATA_LATENCY=2,TL_RX_RAM_RADDR_LATENCY=0,TL_RX_RAM_RDATA_LATENCY=2,TL_RX_RAM_WRITE_LATENCY=0,VC0_TX_LASTPACKET=29,VC0_RX_RAM_LIMIT=7FF,VC0_TOTAL_CREDITS_PH=32,VC0_TOTAL_CREDITS_PD=308,VC0_TOTAL_CREDITS_NPH=12,VC0_TOTAL_CREDITS_CH=36,VC0_TOTAL_CREDITS_CD=308,VC0_CPL_INFINITE=TRUE,DEV_CAP_PHANTOM_FUNCTIONS_SUPPORT=0,DEV_CAP_EXT_TAG_SUPPORTED=FALSE,LINK_STATUS_SLOT_CLOCK_CONFIG=FALSE,ENABLE_RX_TD_ECRC_TRIM=TRUE,DISABLE_LANE_REVERSAL=TRUE,DISABLE_SCRAMBLING=FALSE,DSN_CAP_ON=TRUE,PIPE_PIPELINE_STAGES=0,REVISION_ID=06,VC_CAP_ON=FALSE}";
+	"v6_pcie_v1_7_x4,v6_pcie_v1_7,{LINK_CAP_MAX_LINK_SPEED=2,LINK_CAP_MAX_LINK_WIDTH=04,PCIE_CAP_DEVICE_PORT_TYPE=0000,DEV_CAP_MAX_PAYLOAD_SUPPORTED=2,USER_CLK_FREQ=3,REF_CLK_FREQ=0,MSI_CAP_ON=TRUE,MSI_CAP_MULTIMSGCAP=0,MSI_CAP_MULTIMSG_EXTENSION=0,MSIX_CAP_ON=FALSE,TL_TX_RAM_RADDR_LATENCY=0,TL_TX_RAM_RDATA_LATENCY=2,TL_RX_RAM_RADDR_LATENCY=0,TL_RX_RAM_RDATA_LATENCY=2,TL_RX_RAM_WRITE_LATENCY=0,VC0_TX_LASTPACKET=29,VC0_RX_RAM_LIMIT=7FF,VC0_TOTAL_CREDITS_PH=32,VC0_TOTAL_CREDITS_PD=308,VC0_TOTAL_CREDITS_NPH=12,VC0_TOTAL_CREDITS_CH=36,VC0_TOTAL_CREDITS_CD=308,VC0_CPL_INFINITE=TRUE,DEV_CAP_PHANTOM_FUNCTIONS_SUPPORT=0,DEV_CAP_EXT_TAG_SUPPORTED=FALSE,LINK_STATUS_SLOT_CLOCK_CONFIG=FALSE,ENABLE_RX_TD_ECRC_TRIM=TRUE,DISABLE_LANE_REVERSAL=TRUE,DISABLE_SCRAMBLING=FALSE,DSN_CAP_ON=TRUE,PIPE_PIPELINE_STAGES=0,REVISION_ID=06,VC_CAP_ON=FALSE}";
 
 
   component pcie_reset_delay_v6
