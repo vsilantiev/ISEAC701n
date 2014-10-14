@@ -3,15 +3,14 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Sat Sep 06 12:43:30 2014">
+<application name="pn" timeStamp="Tue Oct 14 22:09:48 2014">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="2F64AA255D4543289C50EFE80FFB0AA4" type="project"/>
 <property name="ProjectIteration" value="4" type="project"/>
-<property name="ProjectFile" value="C:/work/xilinx/ml605/v6pcie.xise" type="project"/>
+<property name="ProjectFile" value="C:/Users/vsilantiev/Documents/ml605_dd/ml605/v6pcie.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2012-03-26T13:51:49" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
-<property name="PROP_Board" value="Virtex 6 ML605 Evaluation Platform" type="process"/>
 <property name="PROP_Enable_Message_Filtering" value="false" type="design"/>
 <property name="PROP_FitterReportFormat" value="HTML" type="process"/>
 <property name="PROP_LastAppliedGoal" value="Balanced" type="design"/>
@@ -34,22 +33,22 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_xilxMapAllowLogicOpt" value="true" type="process"/>
 <property name="PROP_xilxSynthKeepHierarchy" value="Yes" type="process"/>
 <property name="PROP_AutoTop" value="true" type="design"/>
-<property name="PROP_DevFamily" value="Virtex6" type="design"/>
+<property name="PROP_DevFamily" value="Artix7" type="design"/>
 <property name="PROP_MapExtraEffort_virtex5" value="Normal" type="process"/>
 <property name="PROPEXT_xilxPARextraEffortLevel_virtex5" value="Normal" type="process"/>
-<property name="PROP_DevDevice" value="xc6vlx240t" type="design"/>
-<property name="PROP_DevFamilyPMName" value="virtex6" type="design"/>
+<property name="PROP_DevDevice" value="xc7a200t" type="design"/>
+<property name="PROP_DevFamilyPMName" value="artix7" type="design"/>
 <property name="PROP_ISimSimulationRunTime_behav_tb" value="10000 ns" type="process"/>
-<property name="PROP_DevPackage" value="ff1156" type="design"/>
+<property name="PROP_DevPackage" value="fbg676" type="design"/>
 <property name="PROP_ISimSimDataFileName_behav" value="changed" type="process"/>
 <property name="PROP_Synthesis_Tool" value="XST (VHDL/Verilog)" type="design"/>
-<property name="PROP_DevSpeed" value="-1" type="design"/>
+<property name="PROP_DevSpeed" value="-2" type="design"/>
 <property name="PROP_PreferredLanguage" value="VHDL" type="design"/>
 <property name="FILE_COREGEN" value="6" type="source"/>
 <property name="FILE_NGC" value="2" type="source"/>
 <property name="FILE_UCF" value="1" type="source"/>
-<property name="FILE_VERILOG" value="10" type="source"/>
-<property name="FILE_VHDL" value="41" type="source"/>
+<property name="FILE_VERILOG" value="26" type="source"/>
+<property name="FILE_VHDL" value="60" type="source"/>
 </section>
 </application>
 </document>

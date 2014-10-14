@@ -4,7 +4,7 @@ run
 -ifn v6pcieDMA.prj
 -ofn v6pcieDMA
 -ofmt NGC
--p xc6vlx240t-1-ff1156
+-p xc7a200t-2-fbg676
 -top v6pcieDMA
 -opt_mode Speed
 -opt_level 1

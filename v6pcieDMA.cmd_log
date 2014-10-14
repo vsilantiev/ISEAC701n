@@ -26,3 +26,8 @@ map -intstyle ise -p xc6vlx240t-ff1156-1 -w -logic_opt off -ol high -xe n -t 1 -
 par -w -intstyle ise -ol high -xe n -mt off v6pcieDMA_map.ncd v6pcieDMA.ncd v6pcieDMA.pcf 
 trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml v6pcieDMA.twx v6pcieDMA.ncd -o v6pcieDMA.twr v6pcieDMA.pcf 
 bitgen -intstyle ise -f v6pcieDMA.ut v6pcieDMA.ncd 
+xst -intstyle ise -ifn "C:/Users/vsilantiev/Documents/ml605_dd/ml605/v6pcieDMA.xst" -ofn "C:/Users/vsilantiev/Documents/ml605_dd/ml605/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "C:/Users/vsilantiev/Documents/ml605_dd/ml605/v6pcieDMA.xst" -ofn "C:/Users/vsilantiev/Documents/ml605_dd/ml605/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "C:/Users/vsilantiev/Documents/ml605_dd/ml605/v6pcieDMA.xst" -ofn "C:/Users/vsilantiev/Documents/ml605_dd/ml605/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "C:/Users/vsilantiev/Documents/ml605_dd/ml605/v6pcieDMA.xst" -ofn "C:/Users/vsilantiev/Documents/ml605_dd/ml605/v6pcieDMA.syr" 
+xst -intstyle ise -ifn "C:/Users/vsilantiev/Documents/ml605_dd/ml605/v6pcieDMA.xst" -ofn "C:/Users/vsilantiev/Documents/ml605_dd/ml605/v6pcieDMA.syr" 

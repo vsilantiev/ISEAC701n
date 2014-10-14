@@ -283,10 +283,12 @@ end component;
 --- OSS: For POWER_SAVE error correct bit[4] and install ISE12 Patch!! ---
 -- -----------------------------------------------------------------------
 
---S component v6_pcie_v1_7_x1
-   component v6_pcie_v1_7_x4
-   generic (
-         PL_FAST_TRAIN  : boolean
+component v6v7pciewrapper
+	generic (
+         --PL_FAST_TRAIN  : boolean
+			PL_FAST_TRAIN                              : string := "FALSE";
+			PCIE_EXT_CLK                               : string := "FALSE";
+			UPSTREAM_FACING                            : string := "TRUE"
          );
    port (
     ---------------------------------------------------------
@@ -429,6 +431,10 @@ end component;
     sys_reset_n                    : in  STD_LOGIC
   );
  end component;
+
+
+
+
 
 
 
@@ -1363,7 +1369,8 @@ begin
                  I      =>  sys_reset_n
                 );
 
-   refclk_ibuf : IBUFDS_GTXE1
+--   refclk_ibuf : IBUFDS_GTXE1
+	refclk_ibuf : IBUFDS_GTE2
       port map (
                  O      =>  sys_clk_c,
                  ODIV2  =>  open,
@@ -1456,11 +1463,13 @@ begin
 -- --------------------------------------------------------------
 -- --------------------------------------------------------------
 
-make4Lanes: if pcieLanes = 4 generate
---S pcieCore : v6_pcie_v1_7_x1
-    pcieCore : v6_pcie_v1_7_x4
+
+
+    pciewrapper : v6v7pciewrapper
     generic map (
-                 PL_FAST_TRAIN  => FALSE
+                   PL_FAST_TRAIN  => PL_FAST_TRAIN,
+						PCIE_EXT_CLK => PCIE_EXT_CLK,
+						UPSTREAM_FACING => UPSTREAM_FACING 
              )
     port map (
 
@@ -1491,7 +1500,7 @@ make4Lanes: if pcieLanes = 4 generate
       trn_terr_drop_n   =>     trn_terr_drop_n       ,
       trn_tdst_rdy_n    =>     trn_tdst_rdy_n        ,
       trn_td            =>     trn_td                ,
-      trn_trem_n        =>     trn_trem_n(0)         ,
+      trn_trem_n        =>     trn_trem_n         		,
       trn_tsof_n        =>     trn_tsof_n            ,
       trn_teof_n        =>     trn_teof_n            ,
       trn_tsrc_rdy_n    =>     trn_tsrc_rdy_n        ,
@@ -1502,7 +1511,7 @@ make4Lanes: if pcieLanes = 4 generate
 
       -- Rx
       trn_rd            =>     trn_rd                ,
-      trn_rrem_n        =>     trn_rrem_n(0)         ,
+      trn_rrem_n        =>     trn_rrem_n         		,
       trn_rsof_n        =>     trn_rsof_n            ,
       trn_reof_n        =>     trn_reof_n            ,
       trn_rsrc_rdy_n    =>     trn_rsrc_rdy_n        ,
@@ -1598,7 +1607,7 @@ make4Lanes: if pcieLanes = 4 generate
                
 );
 
- end generate;
+
 
 
 -- ---------------------------------------------------------------
