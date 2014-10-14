@@ -336,31 +336,43 @@ Parsing VHDL file "C:\Users\vsilantiev\Documents\ml605_dd\ml605\ipcore_dir_ISE13
 Parsing VHDL file "C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" into library work
 Parsing entity <v6v7pciewrapper>.
 Parsing architecture <Behavioral> of entity <v6v7pciewrapper>.
-ERROR:HDLCompiler:69 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 488: <user_clk> is not declared.
-ERROR:HDLCompiler:192 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 488: Actual of formal out port user_clk_out cannot be an expression
-ERROR:HDLCompiler:69 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 489: <user_reset> is not declared.
-ERROR:HDLCompiler:192 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 489: Actual of formal out port user_reset_out cannot be an expression
-ERROR:HDLCompiler:69 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 490: <user_lnk_up> is not declared.
-ERROR:HDLCompiler:192 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 490: Actual of formal out port user_lnk_up cannot be an expression
-ERROR:HDLCompiler:69 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 493: <tx_buf_av> is not declared.
-ERROR:HDLCompiler:192 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 493: Actual of formal out port tx_buf_av cannot be an expression
-ERROR:HDLCompiler:69 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 494: <tx_cfg_req> is not declared.
-ERROR:HDLCompiler:192 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 494: Actual of formal out port tx_cfg_req cannot be an expression
-ERROR:HDLCompiler:69 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 495: <tx_err_drop> is not declared.
-ERROR:HDLCompiler:192 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 495: Actual of formal out port tx_err_drop cannot be an expression
-ERROR:HDLCompiler:69 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 496: <s_axis_tx_tready> is not declared.
-ERROR:HDLCompiler:192 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 496: Actual of formal out port s_axis_tx_tready cannot be an expression
-ERROR:HDLCompiler:69 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 497: <s_axis_tx_tdata> is not declared.
-ERROR:HDLCompiler:69 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 498: <s_axis_tx_tkeep> is not declared.
-ERROR:HDLCompiler:69 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 499: <s_axis_tx_tlast> is not declared.
-ERROR:HDLCompiler:69 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 500: <s_axis_tx_tvalid> is not declared.
-ERROR:HDLCompiler:69 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 501: <s_axis_tx_tuser> is not declared.
-Sorry, too many errors..
+Parsing VHDL file "C:\Users\vsilantiev\Documents\ml605_dd\ml605\MyUserLogic\UserLogic_00\PCIe_UserLogic_00.vhd" into library work
+Parsing package <conv_pkg>.
+Parsing package body <conv_pkg>.
+Parsing entity <single_reg_w_init>.
+Parsing architecture <structural> of entity <single_reg_w_init>.
+Parsing entity <synth_reg_w_init>.
+Parsing architecture <structural> of entity <synth_reg_w_init>.
+Parsing entity <xland2>.
+Parsing architecture <behavior> of entity <xland2>.
+Parsing entity <xlaxi_rst_gen>.
+Parsing architecture <behavior> of entity <xlaxi_rst_gen>.
+Parsing entity <PCIe_UserLogic_00>.
+Parsing architecture <structural> of entity <pcie_userlogic_00>.
+Parsing VHDL file "C:\Users\vsilantiev\Documents\ml605_dd\ml605\MySource\tlpControl.vhd" into library work
+Parsing entity <tlpControl>.
+Parsing architecture <Behavioral> of entity <tlpcontrol>.
+Parsing VHDL file "C:\Users\vsilantiev\Documents\ml605_dd\ml605\MySource\FIFO_Wrapper.vhd" into library work
+Parsing entity <eb_wrapper>.
+Parsing architecture <Behavioral> of entity <eb_wrapper>.
+Parsing VHDL file "C:\Users\vsilantiev\Documents\ml605_dd\ml605\ddrfifodatamodule.vhd" into library work
+Parsing entity <adctofifo>.
+Parsing architecture <Behavioral> of entity <adctofifo>.
+Parsing VHDL file "C:\Users\vsilantiev\Documents\ml605_dd\ml605\MySource\v6eb_pcie.vhd" into library work
+Parsing entity <v6pcieDMA>.
+Parsing architecture <Behavioral> of entity <v6pciedma>.
+ERROR:HDLCompiler:69 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\MySource\v6eb_pcie.vhd" Line 1470: <pl_fast_train> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\MySource\v6eb_pcie.vhd" Line 1471: <pcie_ext_clk> is not declared.
+ERROR:HDLCompiler:69 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\MySource\v6eb_pcie.vhd" Line 1472: <upstream_facing> is not declared.
+ERROR:HDLCompiler:1728 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\MySource\v6eb_pcie.vhd" Line 1503: Type error near trn_trem_n ; current type std_logic_vector; expected type std_logic
+ERROR:HDLCompiler:1728 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\MySource\v6eb_pcie.vhd" Line 1514: Type error near trn_rrem_n ; current type std_logic_vector; expected type std_logic
+ERROR:HDLCompiler:854 - "C:\Users\vsilantiev\Documents\ml605_dd\ml605\MySource\v6eb_pcie.vhd" Line 78: Unit <behavioral> ignored due to previous errors.
+VHDL file C:\Users\vsilantiev\Documents\ml605_dd\ml605\MySource\v6eb_pcie.vhd ignored due to errors
 --> 
 
-Total memory usage is 258268 kilobytes
+Total memory usage is 261596 kilobytes
 
-Number of errors   :   19 (   0 filtered)
+Number of errors   :    6 (   0 filtered)
 Number of warnings :   79 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

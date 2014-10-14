@@ -242,61 +242,22 @@
 <msg type="warning" file="HDLCompiler" num="751" delta="old" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\MySource\Emul.v" Line 677: Redeclaration of ansi port <arg fmt="%s" index="1">user_int_3o</arg> is not allowed
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 488: &lt;<arg fmt="%s" index="1">user_clk</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\MySource\v6eb_pcie.vhd" Line 1470: &lt;<arg fmt="%s" index="1">pl_fast_train</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="192" delta="old" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 488: Actual of formal <arg fmt="%s" index="1">out</arg> port <arg fmt="%s" index="2">user_clk_out</arg> cannot be an expression
+<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\MySource\v6eb_pcie.vhd" Line 1471: &lt;<arg fmt="%s" index="1">pcie_ext_clk</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 489: &lt;<arg fmt="%s" index="1">user_reset</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\MySource\v6eb_pcie.vhd" Line 1472: &lt;<arg fmt="%s" index="1">upstream_facing</arg>&gt; is not declared.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="192" delta="old" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 489: Actual of formal <arg fmt="%s" index="1">out</arg> port <arg fmt="%s" index="2">user_reset_out</arg> cannot be an expression
+<msg type="error" file="HDLCompiler" num="1728" delta="new" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\MySource\v6eb_pcie.vhd" Line 1503: Type error near <arg fmt="%s" index="1">trn_trem_n</arg> ; current type <arg fmt="%s" index="2">std_logic_vector</arg>; expected type <arg fmt="%s" index="3">std_logic</arg>
 </msg>
 
-<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 490: &lt;<arg fmt="%s" index="1">user_lnk_up</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="1728" delta="new" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\MySource\v6eb_pcie.vhd" Line 1514: Type error near <arg fmt="%s" index="1">trn_rrem_n</arg> ; current type <arg fmt="%s" index="2">std_logic_vector</arg>; expected type <arg fmt="%s" index="3">std_logic</arg>
 </msg>
 
-<msg type="error" file="HDLCompiler" num="192" delta="old" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 490: Actual of formal <arg fmt="%s" index="1">out</arg> port <arg fmt="%s" index="2">user_lnk_up</arg> cannot be an expression
-</msg>
-
-<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 493: &lt;<arg fmt="%s" index="1">tx_buf_av</arg>&gt; is not declared.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="192" delta="old" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 493: Actual of formal <arg fmt="%s" index="1">out</arg> port <arg fmt="%s" index="2">tx_buf_av</arg> cannot be an expression
-</msg>
-
-<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 494: &lt;<arg fmt="%s" index="1">tx_cfg_req</arg>&gt; is not declared.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="192" delta="old" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 494: Actual of formal <arg fmt="%s" index="1">out</arg> port <arg fmt="%s" index="2">tx_cfg_req</arg> cannot be an expression
-</msg>
-
-<msg type="error" file="HDLCompiler" num="69" delta="old" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 495: &lt;<arg fmt="%s" index="1">tx_err_drop</arg>&gt; is not declared.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="192" delta="new" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 495: Actual of formal <arg fmt="%s" index="1">out</arg> port <arg fmt="%s" index="2">tx_err_drop</arg> cannot be an expression
-</msg>
-
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 496: &lt;<arg fmt="%s" index="1">s_axis_tx_tready</arg>&gt; is not declared.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="192" delta="new" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 496: Actual of formal <arg fmt="%s" index="1">out</arg> port <arg fmt="%s" index="2">s_axis_tx_tready</arg> cannot be an expression
-</msg>
-
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 497: &lt;<arg fmt="%s" index="1">s_axis_tx_tdata</arg>&gt; is not declared.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 498: &lt;<arg fmt="%s" index="1">s_axis_tx_tkeep</arg>&gt; is not declared.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 499: &lt;<arg fmt="%s" index="1">s_axis_tx_tlast</arg>&gt; is not declared.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 500: &lt;<arg fmt="%s" index="1">s_axis_tx_tvalid</arg>&gt; is not declared.
-</msg>
-
-<msg type="error" file="HDLCompiler" num="69" delta="new" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\v6v7pciewrapper.vhd" Line 501: &lt;<arg fmt="%s" index="1">s_axis_tx_tuser</arg>&gt; is not declared.
+<msg type="error" file="HDLCompiler" num="854" delta="old" >"C:\Users\vsilantiev\Documents\ml605_dd\ml605\MySource\v6eb_pcie.vhd" Line 78: Unit &lt;<arg fmt="%s" index="1">behavioral</arg>&gt; ignored due to previous errors.
 </msg>
 
 </messages>

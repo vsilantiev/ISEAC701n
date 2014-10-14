@@ -19,6 +19,7 @@
          <ClosedNode>/v6pcieDMA - Behavioral C:|Users|vsilantiev|Documents|ml605_dd|ml605|MySource|v6eb_pcie.vhd/DDRs_ctrl_module - adctofifo - Behavioral</ClosedNode>
          <ClosedNode>/v6pcieDMA - Behavioral C:|Users|vsilantiev|Documents|ml605_dd|ml605|MySource|v6eb_pcie.vhd/pcieCore - v6_pcie_v1_7_x4 - v6_pcie</ClosedNode>
          <ClosedNode>/v6pcieDMA - Behavioral C:|Users|vsilantiev|Documents|ml605_dd|ml605|MySource|v6eb_pcie.vhd/pcie_userlogic_00_x0 - PCIe_UserLogic_00 - structural</ClosedNode>
+         <ClosedNode>/v6pcieDMA - Behavioral C:|Users|vsilantiev|Documents|ml605_dd|ml605|MySource|v6eb_pcie.vhd/pciewrapper - v6v7pciewrapper - Behavioral/v7_pcie_i - v7_pcie - pcie_7x</ClosedNode>
          <ClosedNode>/v6pcieDMA - Behavioral C:|Users|vsilantiev|Documents|ml605_dd|ml605|MySource|v6eb_pcie.vhd/queue_buffer0 - eb_wrapper - Behavioral</ClosedNode>
          <ClosedNode>/v6pcieDMA - Behavioral C:|Users|vsilantiev|Documents|ml605_dd|ml605|MySource|v6eb_pcie.vhd/theTlpControl - tlpControl - Behavioral</ClosedNode>
          <ClosedNode>/v6pcieDMA - Behavioral C:|work|xilinx|ml605|MySource|v6eb_pcie.vhd/DDRs_ctrl_module - adctofifo - Behavioral</ClosedNode>
@@ -53,7 +54,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002a7000000020000000000000000000000000200000064ffffffff000000810000000300000002000002a70000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001f2000000020000000000000000000000000200000064ffffffff000000810000000300000002000001f20000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>v6pcieDMA - Behavioral (C:/Users/vsilantiev/Documents/ml605_dd/ml605/MySource/v6eb_pcie.vhd)</CurrentItem>
    </ItemView>
@@ -69,13 +70,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Analyze Design Using ChipScope</SelectedItem>
+         <SelectedItem>View RTL Schematic</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >15</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000023e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000023e0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Analyze Design Using ChipScope</CurrentItem>
+      <CurrentItem>View RTL Schematic</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -105,13 +106,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000024f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000024f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000016a000000d401000000060100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
@@ -134,13 +135,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000033f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000033f0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
